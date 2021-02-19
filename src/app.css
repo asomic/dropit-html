@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+aside {
+    @apply w-full;
+}
+aside.active {
+    @apply min-h-full;
+}
+aside .brand {
+}
+aside .menu {
+}
+aside .avatar {
+}
+
+@media (min-width: 1024px) {
+
+    aside {
+        @apply w-auto;
+        grid-template-rows: repeat(12, minmax(0, 1fr));
+    }
+    aside .brand {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    aside .menu {
+        grid-row-start: 2;
+        grid-row-end: 11;
+    }
+    aside .avatar {
+        grid-row-start: 11;
+        grid-row-end: 12;
+    }
+}
+
+@media (min-height: 800px) {
+    aside {
+        /* grid-template-rows: repeat(12, minmax(0, 1fr)); */
+    }
+    aside .brand {
+        /* grid-row-start: 1; */
+        /* grid-row-end: 2; */
+    }
+    aside .menu {
+        /* grid-row-start: 2; */
+        grid-row-end: 12;
+    }
+    aside .avatar {
+        grid-row-start: 12;
+        grid-row-end: 13;
+    }
+}
+
+.header-item {
+    @apply flex items-center py-3 px-5 mb-1 rounded;
+    /* @apply flex items-center py-3 px-7 mb-1 rounded; */
+}
+
+@media (min-width: 1440px) {
+    .header-item {
+        @apply flex items-center py-3 px-7 mb-1 rounded;
+    }
+}
+
+.header-item:hover,
+.header-item.active {
+    @apply bg-blue-light text-orange;
+}
+
+.header-item.active svg path,
+.header-item:hover > svg path {
+    fill: #FF6633;
+}
+
+.header-item.active .count {
+    @apply text-white;
+}
+
+.header-item:hover > .count {
+    @apply text-white;
+}
+
+.burger {
+    @apply cursor-pointer;
+}
+
+.burger div {
+    @apply w-7 h-0.5 bg-white mb-1 transform transition duration-300;
+}
+
+.burger div:last-child {
+    @apply mb-0;
+}
+
+.burger.active div:first-child {
+    @apply rotate-45 translate-y-1.5;
+}
+
+.burger.active div:nth-child(2){
+    @apply invisible duration-100;
+}
+
+.burger.active div:last-child {
+    @apply -rotate-45 -translate-y-1.5;
+}
+
+.status {
+    @apply border rounded inline-block py-1 px-3 capitalize text-xs font-medium;
+}
+
+.status.status-green {
+    @apply border-green text-green;
+}
+
+.btn {
+    @apply rounded bg-gray-400 text-white py-3 px-4 text-sm font-medium text-center transition-colors;
+}
+
+.btn.sucess {
+    @apply bg-green text-white;
+}
+
+.btn.sucess:hover {
+    @apply bg-green-dark;
+}
+
+.btn.error {
+    @apply bg-red text-white;
+}
+
+.btn.error:hover {
+    @apply bg-red-dark;
+}
+
+.btn.small {
+    @apply text-xs py-2 px-3;
+}
+
+table a {
+    font-weight: 500;
+}
+
+.breadcrumb {
+    @apply text-sm mb-6 text-gray-600;
+}
+
+.breadcrumb a {
+    @apply font-medium;
+}
