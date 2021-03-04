@@ -35,7 +35,7 @@ aside .avatar {
     }
 }
 
-@media (min-height: 800px) {
+@media (min-height: 0px) {
     aside {
         /* grid-template-rows: repeat(12, minmax(0, 1fr)); */
     }
@@ -112,6 +112,10 @@ aside .avatar {
 
 .status.status-green {
     @apply border-green text-green;
+}
+
+.status.status-red {
+    @apply border-red text-red;
 }
 
 .btn {

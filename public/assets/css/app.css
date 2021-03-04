@@ -20129,7 +20129,7 @@ aside .avatar {
   }
 }
 
-@media (min-height: 800px) {
+@media (min-height: 0px) {
   aside {
     /* grid-template-rows: repeat(12, minmax(0, 1fr)); */
   }
@@ -20259,6 +20259,13 @@ aside .avatar {
   border-color: rgba(45, 188, 59, var(--tw-border-opacity));
   --tw-text-opacity: 1;
   color: rgba(45, 188, 59, var(--tw-text-opacity));
+}
+
+.status.status-red {
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 0, 0, var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(255, 0, 0, var(--tw-text-opacity));
 }
 
 .btn {
