@@ -1,12 +1,12 @@
 (function () {
 
-    console.log('funca alooo!!!');
-
     let burger = document.querySelector('.burger');
+    let aside = document.querySelector('aside');
 
     burger && (
         burger.onclick = () => {
-            console.log('funca!');
+            console.log('click en burger!');
+            aside.classList.toggle('h-20');
         }
     )
 
