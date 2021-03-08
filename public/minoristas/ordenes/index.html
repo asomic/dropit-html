@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DROPIT - Minoristas</title>
-    <link rel="stylesheet" href="../assets/css/app.css">
-    <link rel="stylesheet" href="../assets/css/fonts.css">
-    <link rel="preload" href="../assets/fonts/FivoSans-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-    <link rel="preload" href="../assets/fonts/FivoSans-Medium.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-    <link rel="preload" href="../assets/fonts/FivoSans-Bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+    <link rel="stylesheet" href="../../assets/css/app.css">
+    <link rel="stylesheet" href="../../assets/css/fonts.css">
+    <link rel="preload" href="../../assets/fonts/FivoSans-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+    <link rel="preload" href="../../assets/fonts/FivoSans-Medium.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+    <link rel="preload" href="../../assets/fonts/FivoSans-Bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
 </head>
 <body class="flex relative w-full min-h-screen box-border font-text">
     
@@ -19,7 +19,7 @@
         <div class="flex justify-between items-center mb-10 lg:mb-0">
             <!-- Brand logo -->
             <a href="/public/minoristas/" class="brand block w-full lg:mb-10 ">
-                <img src="../assets/img/logo.svg" alt="Ir al inicio" class="lg:pl-5 2xl:pl-6">
+                <img src="../../assets/img/logo.svg" alt="Ir al inicio" class="lg:pl-5 2xl:pl-6">
             </a>
 
             <div class="burger lg:hidden">
@@ -31,7 +31,7 @@
 
         <!-- Menu -->
         <div class="menu w-full mb-9 lg:mb-0">
-            <a href="/public/minoristas" class="header-item active">
+            <a href="/public/minoristas" class="header-item">
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-3.5">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4087 5.6L8 1.39907L3.59131 5.6H3.5923V12.6H12.4077V5.6H12.4087ZM13.877 6.99908V12.6C13.877 13.3732 13.2192 14 12.4077 14H3.5923C2.78086 14 2.12306 13.3732 2.12306 12.6V6.99906L1.03816 8.03283L0 7.04359L6.96197 0.409703C7.53526 -0.136568 8.46474 -0.136568 9.03803 0.409703L16 7.04359L14.9618 8.03283L13.877 6.99908Z" fill="white"/>
                 </svg>
@@ -39,7 +39,7 @@
                     Inicio
                 </span>
             </a>
-            <a href="/public/minoristas/ordenes/index.html" class="header-item">
+            <a href="/public/minoristas/ordenes/index.html" class="header-item active">
                 <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-3.5">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8333 2.18182H11.5556C12.3533 2.18182 13 2.83304 13 3.63636V14.5455C13 15.3488 12.3533 16 11.5556 16H1.44444C0.6467 16 0 15.3488 0 14.5455V3.63636C0 2.83304 0.6467 2.18182 1.44444 2.18182H2.16667C2.16667 1.37849 2.81337 0.727273 3.61111 0.727273H4.33039C4.8737 0.263982 5.6616 0 6.5 0C7.3384 0 8.1263 0.263982 8.66961 0.727273H9.38889C10.1866 0.727273 10.8333 1.37849 10.8333 2.18182ZM2.35991 3.63636H1.44444V14.5455H11.5556V3.63636H10.6401C10.3903 4.07113 9.92354 4.36364 9.38889 4.36364H3.61111C3.07646 4.36364 2.60966 4.07113 2.35991 3.63636ZM3.61111 10.9091V9.45455H7.94444V10.9091H3.61111ZM3.61111 8V6.54545H9.38889V8H3.61111ZM5.16869 1.93118L4.95272 2.18182H4.62319H3.61111V2.90909H9.38889V2.18182H8.04728L7.83131 1.93118C7.59403 1.65581 7.08542 1.45455 6.5 1.45455C5.91458 1.45455 5.40597 1.65581 5.16869 1.93118Z" fill="#FFFFFF"/>
                 </svg>                    
@@ -100,9 +100,128 @@
     </aside>
 
     <!-- Content -->
-    <main>
+    <main class="mt-20 lg:mt-0 z-0 lg:relative lg:ml-64 2xl:ml-72    bg-white w-full py-8 lg:py-11 px-6 lg:px-10">
 
+        <!-- Ordenes -->
+        <div class="header">
+            <div class="flex justify-between items-center mb-6 lg:mb-10">
+                <h1 class="font-semibold text-3xl">Órdenes</h1>
+                <div class="buttons">
+                    <a href="/public/minoristas/ordenes/nueva.html" class="btn sucess">Nueva Orden</a>
+                </div>
+            </div>
+        </div>
 
+        <div class="body">
+
+            <!-- Filtros y/o Búsqueda -->
+            <div class="settings xl:flex xl:justify-between items-center mb-6">
+                <div class="filters flex flex-wrap text-xs text-gray-500 mb-4 xl:mb-0">
+                    <div class="item mr-5 xl:mr-8 font-normal">
+                        <span class="font-semibold">Fecha</span>
+                        <select name="" id="" class="outline-none w-min">
+                            <option value="">Más Reciente</option>
+                            <option value="">Más Antigua</option>
+                        </select>
+                    </div>
+                    <div class="item mr-5 xl:mr-8 font-normal">
+                        <span class="font-semibold">Cliente</span>
+                        <select name="" id="" class="outline-none w-min">
+                            <option value="">Por Defecto</option>
+                            <option value="">De A a Z</option>
+                            <option value="">De Z a A</option>
+                        </select>
+                    </div>
+                    <div class="item mr-5 xl:mr-8 font-normal">
+                        <span class="font-semibold">Mayorista</span>
+                        <select name="" id="" class="outline-none w-min">
+                            <option value="">Por Defecto</option>
+                            <option value="">De A a Z</option>
+                            <option value="">De Z a A</option>
+                        </select>
+                    </div>
+                    <div class="item mr-5 xl:mr-8 font-normal">
+                        <span class="font-semibold">Estado</span>
+                        <select name="" id="" class="outline-none w-min">
+                            <option value="">Todos</option>
+                            <option value="">Pagado</option>
+                            <option value="">Despachado</option>
+                        </select>
+                    </div>
+                    <div class="item mr-5 xl:mr-8 font-normal">
+                        <span class="font-semibold">Nº Orden</span>
+                        <select name="" id="" class="outline-none w-min">
+                            <option value="">Por Defecto</option>
+                            <option value="">Menos a Mayor</option>
+                            <option value="">Mayor a Menor</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="search">
+                    <form action="">
+                        <div class="relative text-gray-600 focus-within:text-gray-400">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-5 h-5">
+                                    <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                </svg>
+                            </span>
+                            <input type="search" name="q" class="w-full xl:w-auto py-2 text-sm border transition-all duration-300 border-gray-300 focus:border-gray-400 rounded pl-10 pr-4 outline-none" placeholder="Buscar Productos" autocomplete="off">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="table-wrapper table-fixed my-auto overflow-y-auto w-full">
+                <table class="w-full text-sm">
+                    <thead class="bg-gray-100 rounded text-left">
+                        <tr>
+                            <th class="font-medium text-gray-600 py-2 px-5">Nº Orden</th>
+                            <th class="font-medium text-gray-600 py-2 px-5">Fecha</th>
+                            <th class="font-medium text-gray-600 py-2 px-5">Cliente</th>
+                            <th class="font-medium text-gray-600 py-2 px-5">Mayorista</th>
+                            <th class="font-medium text-gray-600 py-2 px-5">Estado</th>
+                            <th class="font-medium text-gray-600 py-2 px-5">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="py-4 px-5">3123</td>
+                            <td class="py-4 px-5">12/04/20</td>
+                            <td class="py-4 px-5">Cristian Zapata</td>
+                            <td class="py-4 px-5"> <a href="/public/minoristas/mayoristas/single.html">Nombre del Mayorista</a> </td>
+                            <td class="py-4 px-5"> <div class="status status-green">pagado</div> </td>
+                            <td class="py-4 px-5">
+                                <a href="/public/minoristas/ordenes/single.html" class="btn small sucess">Ver</a>
+                                <a href="#" class="btn small error">Borrar</a>
+                            </td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-4 px-5">3123</td>
+                            <td class="py-4 px-5">12/04/20</td>
+                            <td class="py-4 px-5">Cristian Zapata</td>
+                            <td class="py-4 px-5"> <a href="/public/minoristas/mayoristas/single.html">Nombre del Mayorista</a> </td>
+                            <td class="py-4 px-5"> <div class="status status-green">pagado</div> </td>
+                            <td class="py-4 px-5">
+                                <a href="/public/minoristas/ordenes/single.html" class="btn small sucess">Ver</a>
+                                <a href="#" class="btn small error">Borrar</a>
+                            </td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-4 px-5">3123</td>
+                            <td class="py-4 px-5">12/04/20</td>
+                            <td class="py-4 px-5">Cristian Zapata</td>
+                            <td class="py-4 px-5"> <a href="/public/minoristas/mayoristas/single.html">Nombre del Mayorista</a> </td>
+                            <td class="py-4 px-5"> <div class="status status-green">pagado</div> </td>
+                            <td class="py-4 px-5">
+                                <a href="/public/minoristas/ordenes/single.html" class="btn small sucess">Ver</a>
+                                <a href="#" class="btn small error">Borrar</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
 
     </main>
 

@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DROPIT - Minoristas</title>
-    <link rel="stylesheet" href="../assets/css/app.css">
-    <link rel="stylesheet" href="../assets/css/fonts.css">
-    <link rel="preload" href="../assets/fonts/FivoSans-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-    <link rel="preload" href="../assets/fonts/FivoSans-Medium.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-    <link rel="preload" href="../assets/fonts/FivoSans-Bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+    <title>DROPIT - Mayoristas</title>
+    <link rel="stylesheet" href="../../assets/css/app.css">
+    <link rel="stylesheet" href="../../assets/css/fonts.css">
+    <link rel="preload" href="../../assets/fonts/FivoSans-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+    <link rel="preload" href="../../assets/fonts/FivoSans-Medium.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+    <link rel="preload" href="../../assets/fonts/FivoSans-Bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
 </head>
 <body class="flex relative w-full min-h-screen box-border font-text">
     
@@ -19,7 +19,7 @@
         <div class="flex justify-between items-center mb-10 lg:mb-0">
             <!-- Brand logo -->
             <a href="/public/minoristas/" class="brand block w-full lg:mb-10 ">
-                <img src="../assets/img/logo.svg" alt="Ir al inicio" class="lg:pl-5 2xl:pl-6">
+                <img src="../../assets/img/logo.svg" alt="Ir al inicio" class="lg:pl-5 2xl:pl-6">
             </a>
 
             <div class="burger lg:hidden">
@@ -31,7 +31,7 @@
 
         <!-- Menu -->
         <div class="menu w-full mb-9 lg:mb-0">
-            <a href="/public/minoristas" class="header-item active">
+            <a href="/public/minoristas" class="header-item">
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-3.5">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4087 5.6L8 1.39907L3.59131 5.6H3.5923V12.6H12.4077V5.6H12.4087ZM13.877 6.99908V12.6C13.877 13.3732 13.2192 14 12.4077 14H3.5923C2.78086 14 2.12306 13.3732 2.12306 12.6V6.99906L1.03816 8.03283L0 7.04359L6.96197 0.409703C7.53526 -0.136568 8.46474 -0.136568 9.03803 0.409703L16 7.04359L14.9618 8.03283L13.877 6.99908Z" fill="white"/>
                 </svg>
@@ -71,7 +71,7 @@
                     Mi Catálogo
                 </span>
             </a>
-            <a href="/public/minoristas/notificaciones/index.html" class="header-item">
+            <a href="/public/minoristas/notificaciones/index.html" class="header-item active">
                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-3.5">
                     <path d="M15.7547 11.5131C15.7547 12.5164 14.9388 13.3309 13.9339 13.3309H1.82085C0.815281 13.3309 0 12.5175 0 11.5131C0 10.51 0.814598 9.6952 1.81848 9.6952C1.8173 9.6952 1.81785 6.05927 1.81785 6.05927C1.81785 2.71196 4.53036 0 7.87735 0C11.2244 0 13.9368 2.71261 13.9368 6.05927V9.69467C14.9386 9.6952 15.7547 10.5097 15.7547 11.5131ZM13.9362 10.9071C13.2666 10.9071 12.7249 10.3657 12.7249 9.69467V6.05927C12.7249 3.38191 10.555 1.2119 7.87735 1.2119C5.19962 1.2119 3.02975 3.38133 3.02975 6.05927V9.69467C3.02975 10.3638 2.48678 10.9071 1.81848 10.9071C1.48398 10.9071 1.2119 11.1793 1.2119 11.5131C1.2119 11.8475 1.48398 12.119 1.82085 12.119H13.9339C14.2699 12.119 14.5428 11.8466 14.5428 11.5131C14.5428 11.1795 14.2698 10.9071 13.9362 10.9071ZM5.15058 13.3309H6.36247C6.36247 14.1675 7.04071 14.8458 7.87735 14.8458C8.71399 14.8458 9.39223 14.1675 9.39223 13.3309H10.6041C10.6041 14.8369 9.38331 16.0577 7.87735 16.0577C6.37139 16.0577 5.15058 14.8369 5.15058 13.3309Z" fill="white"/>
                 </svg>                    
@@ -100,13 +100,116 @@
     </aside>
 
     <!-- Content -->
-    <main>
+    <main class="mt-20 lg:mt-0 z-0 lg:relative lg:ml-64 2xl:ml-72    bg-white w-full py-8 lg:py-11 px-6 lg:px-10">
 
+         <!-- Ordenes -->
+         <div class="header mb-6 lg:mb-10">
+            <div class="flex justify-between items-center mb-6 lg:mb-10">
+                <h1 class="font-semibold text-3xl">Notificaciones</h1>
+            </div>
+        </div>
 
+        <div class="body">
+
+            <div class="section">
+
+                <!-- Filtros y/o Búsqueda -->
+                <div class="settings xl:flex xl:justify-between items-center mb-5">
+                    <div class="filters flex flex-wrap text-xs text-gray-500 mb-4 xl:mb-0">
+                        <div class="item mr-5 xl:mr-8 font-normal">
+                            <span class="font-semibold">Nº Orden</span>
+                            <select name="" id="" class="outline-none w-min">
+                                <option value="">Más Recientes</option>
+                                <option value="">Más Antiguas</option>
+                            </select>
+                        </div>
+                        <div class="item mr-5 xl:mr-8 font-normal">
+                            <span class="font-semibold">Estado</span>
+                            <select name="" id="" class="outline-none w-min">
+                                <option value="">Por Defecto</option>
+                                <option value="">Pagado</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <form action="">
+                            <div class="relative text-gray-600 focus-within:text-gray-400">
+                                <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-5 h-5">
+                                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                    </svg>
+                                </span>
+                                <input type="search" name="q" class="w-full xl:w-auto py-2 text-sm border transition-all duration-300 border-gray-300 focus:border-gray-400 rounded pl-10 pr-4 outline-none" placeholder="Buscar" autocomplete="off">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="table-wrapper table-fixed my-auto overflow-y-auto w-full">
+                    <table class="w-full text-sm">
+                        <thead class="bg-gray-100 rounded text-left">
+                            <tr>
+                                <th class="font-medium text-gray-600 py-2 px-5">Nº Orden</th>
+                                <th class="font-medium text-gray-600 py-2 px-5">Mensaje</th>
+                                <th class="font-medium text-gray-600 py-2 px-5">Estado</th>
+                                <th class="font-medium text-gray-600 py-2 px-5">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="py-4 px-5">3123</td>
+                                <td class="py-4 px-5">Nunc a ipsum sit amet mauris egestas tincidunt...</td>
+                                <td class="py-4 px-5"> <div class="status status-red">No pagado</div> </td>
+                                <td class="py-4 px-5">
+                                    <a href="#" class="btn small sucess">Ver</a>
+                                    <a href="#" class="btn small error">Borrar</a>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-4 px-5">3123</td>
+                                <td class="py-4 px-5">Nunc a ipsum sit amet mauris egestas tincidunt...</td>
+                                <td class="py-4 px-5"> <div class="status status-green">pagado</div> </td>
+                                <td class="py-4 px-5">
+                                    <a href="#" class="btn small sucess">Ver</a>
+                                    <a href="#" class="btn small error">Borrar</a>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-4 px-5">3123</td>
+                                <td class="py-4 px-5">Nunc a ipsum sit amet mauris egestas tincidunt...</td>
+                                <td class="py-4 px-5"> <div class="status status-green">pagado</div> </td>
+                                <td class="py-4 px-5">
+                                    <a href="#" class="btn small sucess">Ver</a>
+                                    <a href="#" class="btn small error">Borrar</a>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-4 px-5">3123</td>
+                                <td class="py-4 px-5">Nunc a ipsum sit amet mauris egestas tincidunt...</td>
+                                <td class="py-4 px-5"> <div class="status status-green">pagado</div> </td>
+                                <td class="py-4 px-5">
+                                    <a href="#" class="btn small sucess">Ver</a>
+                                    <a href="#" class="btn small error">Borrar</a>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-4 px-5">3123</td>
+                                <td class="py-4 px-5">Nunc a ipsum sit amet mauris egestas tincidunt...</td>
+                                <td class="py-4 px-5"> <div class="status status-green">pagado</div> </td>
+                                <td class="py-4 px-5">
+                                    <a href="#" class="btn small sucess">Ver</a>
+                                    <a href="#" class="btn small error">Borrar</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
 
     </main>
-
-    <script src="../assets/js/app.js"></script>
 
 </body>
 </html>

@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DROPIT - Minoristas</title>
-    <link rel="stylesheet" href="../assets/css/app.css">
-    <link rel="stylesheet" href="../assets/css/fonts.css">
-    <link rel="preload" href="../assets/fonts/FivoSans-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-    <link rel="preload" href="../assets/fonts/FivoSans-Medium.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-    <link rel="preload" href="../assets/fonts/FivoSans-Bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+    <title>DROPIT - Mayoristas</title>
+    <link rel="stylesheet" href="../../assets/css/app.css">
+    <link rel="stylesheet" href="../../assets/css/fonts.css">
+    <link rel="preload" href="../../assets/fonts/FivoSans-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+    <link rel="preload" href="../../assets/fonts/FivoSans-Medium.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+    <link rel="preload" href="../../assets/fonts/FivoSans-Bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
 </head>
 <body class="flex relative w-full min-h-screen box-border font-text">
     
@@ -19,7 +19,7 @@
         <div class="flex justify-between items-center mb-10 lg:mb-0">
             <!-- Brand logo -->
             <a href="/public/minoristas/" class="brand block w-full lg:mb-10 ">
-                <img src="../assets/img/logo.svg" alt="Ir al inicio" class="lg:pl-5 2xl:pl-6">
+                <img src="../../assets/img/logo.svg" alt="Ir al inicio" class="lg:pl-5 2xl:pl-6">
             </a>
 
             <div class="burger lg:hidden">
@@ -31,7 +31,7 @@
 
         <!-- Menu -->
         <div class="menu w-full mb-9 lg:mb-0">
-            <a href="/public/minoristas" class="header-item active">
+            <a href="/public/minoristas" class="header-item">
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-3.5">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4087 5.6L8 1.39907L3.59131 5.6H3.5923V12.6H12.4077V5.6H12.4087ZM13.877 6.99908V12.6C13.877 13.3732 13.2192 14 12.4077 14H3.5923C2.78086 14 2.12306 13.3732 2.12306 12.6V6.99906L1.03816 8.03283L0 7.04359L6.96197 0.409703C7.53526 -0.136568 8.46474 -0.136568 9.03803 0.409703L16 7.04359L14.9618 8.03283L13.877 6.99908Z" fill="white"/>
                 </svg>
@@ -47,7 +47,7 @@
                     Órdenes
                 </span>
             </a>
-            <a href="/public/minoristas/clientes/index.html" class="header-item">
+            <a href="/public/minoristas/clientes/index.html" class="header-item active">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-3.5">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3.66205 12.9016C4.81695 13.9245 6.33596 14.5455 8 14.5455C9.66404 14.5455 11.1831 13.9245 12.338 12.9016C12.1251 12.1363 10.5959 11.6364 8 11.6364C5.40409 11.6364 3.87491 12.1363 3.66205 12.9016ZM2.61855 11.727C3.43706 10.6459 5.36044 10.1818 8 10.1818C10.6396 10.1818 12.5629 10.6459 13.3815 11.727C14.1154 10.6693 14.5455 9.38489 14.5455 8C14.5455 4.38505 11.615 1.45455 8 1.45455C4.38505 1.45455 1.45455 4.38505 1.45455 8C1.45455 9.38489 1.88464 10.6693 2.61855 11.727ZM8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16ZM5.09091 6.54545C5.09091 4.91328 6.23935 3.63636 8 3.63636C9.75578 3.63636 10.9091 5.03387 10.9091 6.69091C10.9091 9.07608 9.61315 10.1818 8 10.1818C6.37154 10.1818 5.09091 9.03809 5.09091 6.54545ZM6.54545 6.54545C6.54545 8.19582 7.14052 8.72727 8 8.72727C8.85651 8.72727 9.45455 8.21701 9.45455 6.69091C9.45455 5.78212 8.88411 5.09091 8 5.09091C7.07908 5.09091 6.54545 5.68424 6.54545 6.54545Z" fill="white"/>
                 </svg>      
@@ -100,13 +100,92 @@
     </aside>
 
     <!-- Content -->
-    <main>
+    <main class="mt-20 lg:mt-0 z-0 lg:relative lg:ml-64 2xl:ml-72    bg-white w-full py-8 lg:py-11 px-6 lg:px-10">
 
+        <!-- Ordenes -->
+        <div class="header mb-6 lg:mb-10">
+            <div class="flex justify-between items-center mb-6 lg:mb-10">
+                <h1 class="font-semibold text-3xl">Clientes</h1>
+                <div class="buttons">
+                    <a href="#" class="btn sucess">Editar Cliente</a>
+                </div>
+            </div>
+        </div>
 
+        <div class="body">
+
+            <h3 class="text-xl font-semibold mb-5">
+                Cristian Zapata
+            </h3>
+
+            <div class="order-content xl:grid xl:grid-cols-10 xl:gap-7 2xl:gap-8 ">
+
+                <div class="xl:col-start-1 xl:col-end-4">
+
+                    <!-- Datos del Mayorista -->
+                    <div class="store-data card bg-gray-100 rounded mb-5 ">
+                        <div class="header border-b border-gray-200 px-5 pt-4 pb-2.5">
+                            <h4 class="font-semibold">Datos Generales del Cliente</h4>
+                        </div>
+                        <div class="body px-5 pt-4 pb-5 ">
+                            <div class="item text-sm mb-3">
+                                <span class="font-medium text-gray-500">Nombre</span>
+                                <p>Nombre del Mayorista</p>
+                            </div>
+                            <div class="item text-sm mb-3">
+                                <span class="font-medium text-gray-500">Número de Contacto</span>
+                                <p>+5696697731</p>
+                            </div>
+                            <div class="item text-sm mb-4">
+                                <span class="font-medium text-gray-500">Correo</span>
+                                <p>
+                                    <a href="mailto:ventas@nombremayorista.cl">ventas@nombremayorista.cl</a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="xl:col-start-4 xl:col-end-11">
+
+                    <div class="products-order section ">
+                        <h3 class="text-xl font-semibold mb-3">Histórico de Órdenes</h3>
+                        <table class="w-full text-sm my-auto overflow-y-auto">
+                            <thead class="bg-gray-100 rounded text-left">
+                                <tr>
+                                    <th class="font-medium text-gray-600 py-2 px-4">Nº Orden</th>
+                                    <th class="font-medium text-gray-600 py-2 px-4">Fecha</th>
+                                    <th class="font-medium text-gray-600 py-2 px-4">Mayorista</th>
+                                    <th class="font-medium text-gray-600 py-2 px-4">Estado</th>
+                                    <th class="font-medium text-gray-600 py-2 px-4">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b">
+                                    <td class="py-4 px-5">3123</td>
+                                    <td class="py-4 px-5">12/04/20</td>
+                                    <td class="py-4 px-5">Nombre del Mayorista</td>
+                                    <td class="py-4 px-5">
+                                        <div class="status status-green">pagado</div>
+                                    </td>
+                                    <td class="py-4 px-5">
+                                        <a href="/public/minoristas/ordenes/single.html" class="btn small sucess">Ver</a>
+                                    <a href="#" class="btn small error">Borrar</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </main>
-
-    <script src="../assets/js/app.js"></script>
 
 </body>
 </html>

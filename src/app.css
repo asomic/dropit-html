@@ -134,6 +134,10 @@ aside .avatar {
     @apply bg-red text-white;
 }
 
+.btn.info {
+    @apply bg-blue-vivid text-white;
+}
+
 .btn.error:hover {
     @apply bg-red-dark;
 }

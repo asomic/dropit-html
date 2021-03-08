@@ -25,6 +25,7 @@ module.exports = {
       white: colors.white,
       blue: {
         light: '#2B4965',
+        vivid: '#015098',
         DEFAULT: '#002241'
       },
       orange: {

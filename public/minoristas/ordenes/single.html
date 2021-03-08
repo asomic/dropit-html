@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DROPIT - Minoristas</title>
-    <link rel="stylesheet" href="../assets/css/app.css">
-    <link rel="stylesheet" href="../assets/css/fonts.css">
-    <link rel="preload" href="../assets/fonts/FivoSans-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-    <link rel="preload" href="../assets/fonts/FivoSans-Medium.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-    <link rel="preload" href="../assets/fonts/FivoSans-Bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+    <title>DROPIT - Mayoristas</title>
+    <link rel="stylesheet" href="../../assets/css/app.css">
+    <link rel="stylesheet" href="../../assets/css/fonts.css">
+    <link rel="preload" href="../../assets/fonts/FivoSans-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+    <link rel="preload" href="../../assets/fonts/FivoSans-Medium.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+    <link rel="preload" href="../../assets/fonts/FivoSans-Bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
 </head>
-<body class="flex relative w-full min-h-screen box-border font-text">
+<body class=" flex relative w-full min-h-screen box-border font-text">
     
     <!-- Navbar -->
     <aside class="fixed h-20 lg:h-full z-10 bg-blue text-white lg:min-h-screen overflow-y-hidden lg:overflow-y-auto   lg:w-64 2xl:w-72   py-8 lg:py-12 px-6 lg:px-4 grid text-sm transition-all	">
@@ -19,7 +19,7 @@
         <div class="flex justify-between items-center mb-10 lg:mb-0">
             <!-- Brand logo -->
             <a href="/public/minoristas/" class="brand block w-full lg:mb-10 ">
-                <img src="../assets/img/logo.svg" alt="Ir al inicio" class="lg:pl-5 2xl:pl-6">
+                <img src="../../assets/img/logo.svg" alt="Ir al inicio" class="lg:pl-5 2xl:pl-6">
             </a>
 
             <div class="burger lg:hidden">
@@ -31,7 +31,7 @@
 
         <!-- Menu -->
         <div class="menu w-full mb-9 lg:mb-0">
-            <a href="/public/minoristas" class="header-item active">
+            <a href="/public/minoristas" class="header-item">
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-3.5">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4087 5.6L8 1.39907L3.59131 5.6H3.5923V12.6H12.4077V5.6H12.4087ZM13.877 6.99908V12.6C13.877 13.3732 13.2192 14 12.4077 14H3.5923C2.78086 14 2.12306 13.3732 2.12306 12.6V6.99906L1.03816 8.03283L0 7.04359L6.96197 0.409703C7.53526 -0.136568 8.46474 -0.136568 9.03803 0.409703L16 7.04359L14.9618 8.03283L13.877 6.99908Z" fill="white"/>
                 </svg>
@@ -39,7 +39,7 @@
                     Inicio
                 </span>
             </a>
-            <a href="/public/minoristas/ordenes/index.html" class="header-item">
+            <a href="/public/minoristas/ordenes/index.html" class="header-item active">
                 <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-3.5">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8333 2.18182H11.5556C12.3533 2.18182 13 2.83304 13 3.63636V14.5455C13 15.3488 12.3533 16 11.5556 16H1.44444C0.6467 16 0 15.3488 0 14.5455V3.63636C0 2.83304 0.6467 2.18182 1.44444 2.18182H2.16667C2.16667 1.37849 2.81337 0.727273 3.61111 0.727273H4.33039C4.8737 0.263982 5.6616 0 6.5 0C7.3384 0 8.1263 0.263982 8.66961 0.727273H9.38889C10.1866 0.727273 10.8333 1.37849 10.8333 2.18182ZM2.35991 3.63636H1.44444V14.5455H11.5556V3.63636H10.6401C10.3903 4.07113 9.92354 4.36364 9.38889 4.36364H3.61111C3.07646 4.36364 2.60966 4.07113 2.35991 3.63636ZM3.61111 10.9091V9.45455H7.94444V10.9091H3.61111ZM3.61111 8V6.54545H9.38889V8H3.61111ZM5.16869 1.93118L4.95272 2.18182H4.62319H3.61111V2.90909H9.38889V2.18182H8.04728L7.83131 1.93118C7.59403 1.65581 7.08542 1.45455 6.5 1.45455C5.91458 1.45455 5.40597 1.65581 5.16869 1.93118Z" fill="#FFFFFF"/>
                 </svg>                    
@@ -100,13 +100,176 @@
     </aside>
 
     <!-- Content -->
-    <main>
+    <main class="mt-20 lg:mt-0 z-0 lg:relative lg:ml-64 2xl:ml-72    bg-white w-full py-8 lg:py-11 px-6 lg:px-10">
+        
+        <!-- Ordenes -->
+        <div class="header">
+            <div class="flex justify-between items-center mb-6 lg:mb-10">
+                <h1 class="font-semibold text-3xl">Orden</h1>
+                <div class="buttons">
+                    <a href="#" class="btn sucess">Imprimir Orden</a>
+                </div>
+            </div>
 
+            <div class="breadcrumb">
+                <a href="/public/minoristas/ordenes/index.html">Órdenes</a>
+                &nbsp;>&nbsp;
+                Orden Nª23123
+            </div>
+        </div>
 
+        <div class="body">
+
+            <!-- Orden -->
+            <div class="orden-wrapper">
+
+                <div class="order-header flex items-center mb-5">
+                    <h2 class="mr-4 font-semibold text-2xl">Orden Nº23123</h2>
+                    <div class="status status-green">pagado</div>
+                </div>
+
+                <div class="order-content xl:grid xl:grid-cols-10 xl:gap-7 2xl:gap-8 ">
+
+                    <div class="xl:col-start-1 xl:col-end-4">
+
+                        <!-- Datos del Mayorista -->
+                        <div class="store-data card bg-gray-100 rounded mb-5 ">
+                            <div class="header border-b border-gray-200 px-5 pt-4 pb-2.5">
+                                <h4 class="font-semibold">Datos del Mayorista</h4>
+                            </div>
+                            <div class="body px-5 pt-4 pb-5 ">
+                                <div class="item text-sm mb-3">
+                                    <span class="font-medium text-gray-500">Nombre</span>
+                                    <p>Nombre del Mayorista</p>
+                                </div>
+                                <div class="item text-sm mb-3">
+                                    <span class="font-medium text-gray-500">Número de Contacto</span>
+                                    <p>+5696697731</p>
+                                </div>
+                                <div class="item text-sm mb-4">
+                                    <span class="font-medium text-gray-500">Correo</span>
+                                    <p>
+                                        <a href="mailto:ventas@nombremayorista.cl">ventas@nombremayorista.cl</a>
+                                    </p>
+                                </div>
+
+                                <a href="#" class="btn sucess small block">Enviar Mensaje</a>
+                            </div>
+                        </div>
+
+                        <!-- Datos de despacho -->
+                        <div class="delivery-data card bg-gray-100 rounded lg:mb-5 xl:mb-0">
+                            <div class="header border-b border-gray-200 px-5 pt-4 pb-2.5">
+                                <h4 class="font-semibold">Datos de Despacho</h4>
+                            </div>
+                            <div class="body px-5 pt-4 pb-5 ">
+                                <div class="item text-sm mb-3">
+                                    <span class="font-medium text-gray-500">Nombre</span>
+                                    <p>Cristian Zapata</p>
+                                </div>
+                                <div class="item text-sm mb-3">
+                                    <span class="font-medium text-gray-500">Teléfono</span>
+                                    <p>+56 9 2342431</p>
+                                </div>
+                                <div class="item text-sm mb-3">
+                                    <span class="font-medium text-gray-500">Dirección</span>
+                                    <p>Av Los Libertadores #334</p>
+                                </div>
+                                <div class="item text-sm ">
+                                    <span class="font-medium text-gray-500">Correo</span>
+                                    <p>
+                                        <a href="mailto:cristianzapata334@gmail.com">cristianzapata334@gmail.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+
+                    </div>
+
+                    <div class="xl:col-start-4 xl:col-end-11">
+                        
+                        <!-- Datos del Minorista -->
+                        <div class="order-data card bg-gray-100 rounded mb-7 ">
+                            <div class="header border-b border-gray-200 px-5 pt-4 pb-2.5">
+                                <div class="flex justify-between">
+                                    <h4 class="font-semibold">Info de la Orden</h4>
+                                    <div class="buttons">
+                                        <a href="#" class="btn small sucess">Editar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="body px-5 pt-4 pb-5 grid grid-cols-4">
+                                <div class="item text-sm mb-3">
+                                    <span class="font-medium text-gray-500">Nº Orden</span>
+                                    <p>3123</p>
+                                </div>
+                                <div class="item text-sm mb-3">
+                                    <span class="font-medium text-gray-500">Fecha</span>
+                                    <p>12/04/20</p>
+                                </div>
+                                <div class="item text-sm">
+                                    <span class="font-medium text-gray-500">Cód de Seguimiento</span>
+                                    <p>
+                                        59823458293485
+                                    </p>
+                                </div>
+                                <div class="item text-sm">
+                                    <span class="font-medium text-gray-500 block">Estado</span>
+                                    <div class="status status-green">pagado</div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="products-order section ">
+                            <h3 class="text-xl font-semibold mb-3">Productos</h3>
+                            <table class="w-full text-sm my-auto overflow-y-auto">
+                                <thead class="bg-gray-100 rounded text-left">
+                                    <tr>
+                                        <th class="font-medium text-gray-600 py-2 px-4">Nombre</th>
+                                        <th class="font-medium text-gray-600 py-2 px-4">Cantidad</th>
+                                        <th class="font-medium text-gray-600 py-2 px-4">Valor Unit.</th>
+                                        <th class="font-medium text-gray-600 py-2 px-4">Valor Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b">
+                                        <td class="py-4 px-5">Nombre del Producto</td>
+                                        <td class="py-4 px-5">10</td>
+                                        <td class="py-4 px-5">$<span>8.000</span> </td>
+                                        <td class="py-4 px-5">$<span>80.000</span> </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="py-4 px-5">Nombre del Producto</td>
+                                        <td class="py-4 px-5">10</td>
+                                        <td class="py-4 px-5">$<span>14.000</span> </td>
+                                        <td class="py-4 px-5">$<span>210.000</span> </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="py-4 px-5">Nombre del Producto</td>
+                                        <td class="py-4 px-5">10</td>
+                                        <td class="py-4 px-5">$<span>15.000</span> </td>
+                                        <td class="py-4 px-5">$<span>300.000</span> </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td></td>
+                                        <td></td>
+                                        <td class="py-4 px-5">Valor Total</td>
+                                        <td class="py-4 px-5">$<span>1.380.000</span> </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </main>
-
-    <script src="../assets/js/app.js"></script>
 
 </body>
 </html>
