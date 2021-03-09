@@ -100,18 +100,11 @@
     </aside>
 
     <!-- Content -->
-    <main class="mt-20 lg:mt-0 z-0 lg:relative lg:ml-64 2xl:ml-72    bg-white w-full py-8 lg:py-11 px-6 lg:px-0">
+    <main class="mt-20 lg:mt-0 z-0 relative lg:ml-64 2xl:ml-72    bg-white w-full px-6 lg:px-0">
 
-        <div class="flex relative w-full box-border">
+        <div class="new-order-grid grid grid-cols-12 relative w-full box-border">
 
-            <!-- AQUÍ! CAMBIAR POR GRID!!!
-            POR DISPLAY GRID
-            ATENTIII!!!!
-            ATENTIII1111
-            EN ESTE CONTENEDORRRSH PARA queCALCEN
-            los widths -->
-
-            <div class="main-body w-4/5 relative bg-red box-border">
+            <div class="main-body col-start-1 col-end-10 relative box-border py-8 lg:py-11 lg:px-10">
                  <!-- Ordenes -->
                 <div class="header mb-6 lg:mb-10">
                     <div class="flex justify-between items-center mb-6 lg:mb-10">
@@ -125,7 +118,7 @@
                         Agregar Productos
                     </h3>
 
-                    <div class="flex justify-between mb-3">
+                    <div class="flex justify-between items-center mb-4">
                         <div class="filters flex flex-wrap items-center text-xs text-gray-500 mb-4 xl:mb-0">
                             <div class="item mr-5 xl:mr-8 font-normal">
                                 <span class="font-semibold">Categoría</span>
@@ -157,11 +150,11 @@
                         </div>
                     </div>
 
-                    <div class="aviso flex justify-between items-center bg-gray-100 rounded py-2.5 px-4 mb-4">
+                    <div class="aviso flex justify-between items-center bg-gray-100 rounded py-2.5 px-5 mb-4">
                         <p class="text-sm">
                             Se mostrarán solo los productos que están en <span class="font-semibold">Mi Catálogo</span>
                         </p>
-                        <p>✕</p>
+                        <p class="cursor-pointer">✕</p>
                     </div>
 
                     <div class="section">
@@ -277,30 +270,102 @@
                     </div>
 
                 </div>
+
             </div>
 
-            <div class="side-body w-1/5 fixed top-0 bottom-0 right-0 box-border">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam est obcaecati voluptates consequatur porro in aspernatur ad consequuntur molestiae iste, nesciunt rem placeat minima ducimus maxime, provident sint. Veritatis?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam est obcaecati voluptates consequatur porro in aspernatur ad consequuntur molestiae iste, nesciunt rem placeat minima ducimus maxime, provident sint. Veritatis?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam est obcaecati voluptates consequatur porro in aspernatur ad consequuntur molestiae iste, nesciunt rem placeat minima ducimus maxime, provident sint. Veritatis?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam est obcaecati voluptates consequatur porro in aspernatur ad consequuntur molestiae iste, nesciunt rem placeat minima ducimus maxime, provident sint. Veritatis?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam est obcaecati voluptates consequatur porro in aspernatur ad consequuntur molestiae iste, nesciunt rem placeat minima ducimus maxime, provident sint. Veritatis?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam est obcaecati voluptates consequatur porro in aspernatur ad consequuntur molestiae iste, nesciunt rem placeat minima ducimus maxime, provident sint. Veritatis?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam est obcaecati voluptates consequatur porro in aspernatur ad consequuntur molestiae iste, nesciunt rem placeat minima ducimus maxime, provident sint. Veritatis?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam est obcaecati voluptates consequatur porro in aspernatur ad consequuntur molestiae iste, nesciunt rem placeat minima ducimus maxime, provident sint. Veritatis?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam est obcaecati voluptates consequatur porro in aspernatur ad consequuntur molestiae iste, nesciunt rem placeat minima ducimus maxime, provident sint. Veritatis?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam est obcaecati voluptates consequatur porro in aspernatur ad consequuntur molestiae iste, nesciunt rem placeat minima ducimus maxime, provident sint. Veritatis?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam est obcaecati voluptates consequatur porro in aspernatur ad consequuntur molestiae iste, nesciunt rem placeat minima ducimus maxime, provident sint. Veritatis?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam est obcaecati voluptates consequatur porro in aspernatur ad consequuntur molestiae iste, nesciunt rem placeat minima ducimus maxime, provident sint. Veritatis?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam est obcaecati voluptates consequatur porro in aspernatur ad consequuntur molestiae iste, nesciunt rem placeat minima ducimus maxime, provident sint. Veritatis?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam est obcaecati voluptates consequatur porro in aspernatur ad consequuntur molestiae iste, nesciunt rem placeat minima ducimus maxime, provident sint. Veritatis?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam est obcaecati voluptates consequatur porro in aspernatur ad consequuntur molestiae iste, nesciunt rem placeat minima ducimus maxime, provident sint. Veritatis?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam est obcaecati voluptates consequatur porro in aspernatur ad consequuntur molestiae iste, nesciunt rem placeat minima ducimus maxime, provident sint. Veritatis?
+            <div class="side-body col-start-10 col-end-13 sticky top-0 h-screen overflow-hidden overflow-y-auto py-10 px-7 box-border shadow-xl">
+
+                <h3 class="font-semibold text-xl mb-5">
+                    Productos Agregados
+                </h3>
+
+                <div class="box-cart flex justify-center flex-col flex-wrap text-center m-auto border rounded py-12 px-0">
+
+                    <img src="../../assets/img/icons/bag.svg" alt="Carrito de Orden" class="mb-4 w-10 m-auto">
+                    
+                    <p class="text-gray-700 leading-4 w-2/3 m-auto text-sm">
+                        Aquí aparecerán los productos que agregues a la orden
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="modal top-0 fixed overflow-y-auto right-0 bg-white w-1/5 h-screen pt-9 px-7 pb-28">
+
+                <div class="img block w-full h-48 bg-gray-600 mb-6"></div>
+                <h4 class="font-semibold text-md mb-0">Nombre del Producto</h4>
+                <p class="text-gray-400 text-sm mb-4">Categoría</p>
+
+                <p class="text-sm text-gray-800 mb-4">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem vitae velit provident veritatis! Vel modi accusantium doloribus ad velit molestias, repellat quasi fuga! Itaque dolores vitae pariatur, temporibus consequatur natus.
+                </p>
+
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">Tamaños</p>
+                    <div class="flex items-center">
+                        <input type="checkbox" class="mr-2 mb-1">
+                        <span>S</span>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" class="mr-2 mb-1">
+                        <span>M</span>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" class="mr-2 mb-1">
+                        <span>L</span>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">Color</p>
+                    <div class="flex">
+                        <div class="flex items-center mr-5">
+                            <input type="checkbox" class="mr-2 mb-1">
+                            <span>Rojo</span>
+                        </div>
+                        <div class="flex items-center mr-5">
+                            <input type="checkbox" class="mr-2 mb-1">
+                            <span>Verde</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">Cantidad</p>
+                    <div class="flex">
+                        <div class="flex items-center mr-5">
+                            <button class="border w-7">-</button>
+                            <input type="number" class="border w-10">
+                            <button class="border w-7">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mt-5 mb-1 text-gray-400">Total</p>
+                    <h4 class="font-semibold text-lg">$80.000</h4>
+                </div>
+
+                <!-- <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis mollitia necessitatibus porro, sequi atque in excepturi eius facilis totam quae, debitis sunt repellendus aliquam! Ratione, inventore? Accusantium ea vel magni!
+                </p> -->
+
+                <div class="fixed bottom-0 w-1/6 pr-1 pb-5 bg-white">
+                    <a href="#" class="btn sucess small block mb-1">
+                        Agregar a la Orden
+                    </a>
+                    <a href="#" class="btn error small block">
+                        Cerrar
+                    </a>
+                </div>
+
             </div>
 
         </div>
 
     </main>
+
 
 </body>
 </html>
