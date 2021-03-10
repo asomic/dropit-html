@@ -11,7 +11,7 @@
     <link rel="preload" href="../../assets/fonts/FivoSans-Medium.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
     <link rel="preload" href="../../assets/fonts/FivoSans-Bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
 </head>
-<body class=" flex relative w-full min-h-screen box-border font-text">
+<body class="flex relative w-full min-h-screen box-border font-text overflow-x-hidden">
     
     <!-- Navbar -->
     <aside class="fixed h-20 lg:h-full z-10 bg-blue text-white lg:min-h-screen overflow-y-hidden lg:overflow-y-auto   lg:w-64 2xl:w-72   py-8 lg:py-12 px-6 lg:px-4 grid text-sm transition-all	">
@@ -175,13 +175,15 @@
                                     <span class="font-medium text-gray-500">Dirección</span>
                                     <p>Av Los Libertadores #334</p>
                                 </div>
-                                <div class="item text-sm ">
+                                <div class="item text-sm mb-3">
                                     <span class="font-medium text-gray-500">Correo</span>
                                     <p>
                                         <a href="mailto:cristianzapata334@gmail.com">cristianzapata334@gmail.com</a>
                                     </p>
                                 </div>
+                                <a href="#" class="btn sucess small block" id="buttonEditOrder">Editar</a>
                             </div>
+
                         </div>
     
 
@@ -270,6 +272,83 @@
         </div>
 
     </main>
+
+    <!-- modal container -->
+    <div class="page-modal absolute inset-0	w-screen h-screen bg-darksparent invisible z-20 transition-all" id="pageModal">
+        
+        <!-- Modal Editar -->
+        <div class="bg-white absolute top-0 bottom-0 right-0 w-1/5 box-border pt-9 px-7 pb-28 invisible" id="modal">
+            
+            <div class="header flex items-center justify-between mb-5">
+                <h3 class="font-semibold text-lg ">Datos de Despacho</h3>
+                <p class="button-close text-lg cursor-pointer " id="closeModal">✕</p>
+            </div>
+
+            <div class="body">
+
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">Nombre</p>
+                    <input type="text" class="border w-full py-1.5 px-2.5 rounded text-sm" placeholder="Ej: Cristian Zapata">
+                </div>
+
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">Teléfono</p>
+                    <input type="text" class="border w-full py-1.5 px-2.5 rounded text-sm" placeholder="Ej: 9 2345678">
+                </div>
+
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">Dirección de Despacho</p>
+                    <input type="text" class="border w-full py-1.5 px-2.5 rounded text-sm" placeholder="Ej: Av. Los Libertadores 334">
+                </div>
+                
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">Región</p>
+                    <select name="" id="" class="box-border text-sm border w-full py-1.5 px-2.5 rounded">
+                        <option value="">Arica y Parinacota</option>
+                        <option value="">Tarapacá</option>
+                        <option value="">Antofagasta</option>
+                        <option value="">Atacama</option>
+                        <option value="">Coquimbo</option>
+                        <option value="">Valparaíso</option>
+                        <option value="">Metropolitana de Santiago</option>
+                        <option value="">Libertador General Bernardo O’Higgins</option>
+                        <option value="">Maule</option>
+                        <option value="">Ñuble</option>
+                        <option value="">Biobío</option>
+                        <option value="">La Araucanía</option>
+                        <option value="">Los Ríos</option>
+                        <option value="">Los Lagos</option>
+                        <option value="">Aysén del General Carlos Ibáñez del Campo</option>
+                        <option value="">Magallanes y la Antártica Chilena</option>
+                    </select>
+                </div>
+                
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">Ciudad</p>
+                    <select name="" id="" class="box-border text-sm border w-full py-1.5 px-2.5 rounded">
+                        <option value="">Curicó</option>
+                        <option value="">Talca</option>
+                    </select>
+                </div>
+
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">Correo</p>
+                    <input type="text" class="border w-full py-1.5 px-2.5 rounded text-sm" placeholder="Ej: cristianzapata334@gmail.com">
+                </div>
+
+                <div class="fixed bottom-0 w-1/6 pr-1 pb-5 bg-white flex">
+                    <a href="#" class="btn sucess small mb-1 flex-1">
+                        Guardar
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../../assets/js/app.js"></script>
 
 </body>
 </html>

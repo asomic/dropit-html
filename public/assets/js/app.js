@@ -10,4 +10,22 @@
         }
     )
 
+    let closeModal = document.querySelector('#closeModal');
+    let editOrder = document.querySelector('#editOrder');
+    let pageModal = document.querySelector('#pageModal');
+    let modal = document.querySelector('#modal');
+    let buttonEditOrder = document.querySelector('#buttonEditOrder');
+
+    closeModal.onclick = () => {
+        pageModal.classList.toggle('invisible');
+        modal.classList.toggle('invisible');
+    }
+
+    buttonEditOrder.onclick = () => {
+        pageModal.classList.toggle('invisible');
+        pageModal.classList.toggle('visible');
+        modal.classList.toggle('invisible');
+        modal.classList.toggle('visible');
+    }
+
 }());

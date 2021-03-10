@@ -1575,6 +1575,10 @@ video {
   border-color: rgba(255, 255, 255, var(--tw-divide-opacity));
 }
 
+.divide-darksparent > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgba(0,0,0, 0.5);
+}
+
 .divide-blue-light > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgba(43, 73, 101, var(--tw-divide-opacity));
@@ -1867,6 +1871,10 @@ video {
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
+.bg-darksparent {
+  background-color: rgba(0,0,0, 0.5);
+}
+
 .bg-blue-light {
   --tw-bg-opacity: 1;
   background-color: rgba(43, 73, 101, var(--tw-bg-opacity));
@@ -1973,6 +1981,10 @@ video {
 .group:hover .group-hover\:bg-white {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:bg-darksparent {
+  background-color: rgba(0,0,0, 0.5);
 }
 
 .group:hover .group-hover\:bg-blue-light {
@@ -2083,6 +2095,10 @@ video {
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
+.focus-within\:bg-darksparent:focus-within {
+  background-color: rgba(0,0,0, 0.5);
+}
+
 .focus-within\:bg-blue-light:focus-within {
   --tw-bg-opacity: 1;
   background-color: rgba(43, 73, 101, var(--tw-bg-opacity));
@@ -2191,6 +2207,10 @@ video {
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
+.hover\:bg-darksparent:hover {
+  background-color: rgba(0,0,0, 0.5);
+}
+
 .hover\:bg-blue-light:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(43, 73, 101, var(--tw-bg-opacity));
@@ -2297,6 +2317,10 @@ video {
 .focus\:bg-white:focus {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+.focus\:bg-darksparent:focus {
+  background-color: rgba(0,0,0, 0.5);
 }
 
 .focus\:bg-blue-light:focus {
@@ -2445,6 +2469,11 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
 }
 
+.from-darksparent {
+  --tw-gradient-from: rgba(0,0,0, 0.5);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+}
+
 .from-blue-light {
   --tw-gradient-from: #2B4965;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(43, 73, 101, 0));
@@ -2541,6 +2570,10 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgba(255, 255, 255, 0));
 }
 
+.via-darksparent {
+  --tw-gradient-stops: var(--tw-gradient-from), rgba(0,0,0, 0.5), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+}
+
 .via-blue-light {
   --tw-gradient-stops: var(--tw-gradient-from), #2B4965, var(--tw-gradient-to, rgba(43, 73, 101, 0));
 }
@@ -2627,6 +2660,10 @@ video {
 
 .to-white {
   --tw-gradient-to: #fff;
+}
+
+.to-darksparent {
+  --tw-gradient-to: rgba(0,0,0, 0.5);
 }
 
 .to-blue-light {
@@ -2731,6 +2768,11 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
 }
 
+.hover\:from-darksparent:hover {
+  --tw-gradient-from: rgba(0,0,0, 0.5);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+}
+
 .hover\:from-blue-light:hover {
   --tw-gradient-from: #2B4965;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(43, 73, 101, 0));
@@ -2827,6 +2869,10 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgba(255, 255, 255, 0));
 }
 
+.hover\:via-darksparent:hover {
+  --tw-gradient-stops: var(--tw-gradient-from), rgba(0,0,0, 0.5), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+}
+
 .hover\:via-blue-light:hover {
   --tw-gradient-stops: var(--tw-gradient-from), #2B4965, var(--tw-gradient-to, rgba(43, 73, 101, 0));
 }
@@ -2913,6 +2959,10 @@ video {
 
 .hover\:to-white:hover {
   --tw-gradient-to: #fff;
+}
+
+.hover\:to-darksparent:hover {
+  --tw-gradient-to: rgba(0,0,0, 0.5);
 }
 
 .hover\:to-blue-light:hover {
@@ -3017,6 +3067,11 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
 }
 
+.focus\:from-darksparent:focus {
+  --tw-gradient-from: rgba(0,0,0, 0.5);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+}
+
 .focus\:from-blue-light:focus {
   --tw-gradient-from: #2B4965;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(43, 73, 101, 0));
@@ -3113,6 +3168,10 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgba(255, 255, 255, 0));
 }
 
+.focus\:via-darksparent:focus {
+  --tw-gradient-stops: var(--tw-gradient-from), rgba(0,0,0, 0.5), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+}
+
 .focus\:via-blue-light:focus {
   --tw-gradient-stops: var(--tw-gradient-from), #2B4965, var(--tw-gradient-to, rgba(43, 73, 101, 0));
 }
@@ -3199,6 +3258,10 @@ video {
 
 .focus\:to-white:focus {
   --tw-gradient-to: #fff;
+}
+
+.focus\:to-darksparent:focus {
+  --tw-gradient-to: rgba(0,0,0, 0.5);
 }
 
 .focus\:to-blue-light:focus {
@@ -3681,6 +3744,10 @@ video {
   border-color: rgba(255, 255, 255, var(--tw-border-opacity));
 }
 
+.border-darksparent {
+  border-color: rgba(0,0,0, 0.5);
+}
+
 .border-blue-light {
   --tw-border-opacity: 1;
   border-color: rgba(43, 73, 101, var(--tw-border-opacity));
@@ -3787,6 +3854,10 @@ video {
 .group:hover .group-hover\:border-white {
   --tw-border-opacity: 1;
   border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+}
+
+.group:hover .group-hover\:border-darksparent {
+  border-color: rgba(0,0,0, 0.5);
 }
 
 .group:hover .group-hover\:border-blue-light {
@@ -3897,6 +3968,10 @@ video {
   border-color: rgba(255, 255, 255, var(--tw-border-opacity));
 }
 
+.focus-within\:border-darksparent:focus-within {
+  border-color: rgba(0,0,0, 0.5);
+}
+
 .focus-within\:border-blue-light:focus-within {
   --tw-border-opacity: 1;
   border-color: rgba(43, 73, 101, var(--tw-border-opacity));
@@ -4005,6 +4080,10 @@ video {
   border-color: rgba(255, 255, 255, var(--tw-border-opacity));
 }
 
+.hover\:border-darksparent:hover {
+  border-color: rgba(0,0,0, 0.5);
+}
+
 .hover\:border-blue-light:hover {
   --tw-border-opacity: 1;
   border-color: rgba(43, 73, 101, var(--tw-border-opacity));
@@ -4111,6 +4190,10 @@ video {
 .focus\:border-white:focus {
   --tw-border-opacity: 1;
   border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+}
+
+.focus\:border-darksparent:focus {
+  border-color: rgba(0,0,0, 0.5);
 }
 
 .focus\:border-blue-light:focus {
@@ -9948,6 +10031,18 @@ video {
   color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
 }
 
+.placeholder-darksparent::-moz-placeholder {
+  color: rgba(0,0,0, 0.5);
+}
+
+.placeholder-darksparent:-ms-input-placeholder {
+  color: rgba(0,0,0, 0.5);
+}
+
+.placeholder-darksparent::placeholder {
+  color: rgba(0,0,0, 0.5);
+}
+
 .placeholder-blue-light::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(43, 73, 101, var(--tw-placeholder-opacity));
@@ -10270,6 +10365,18 @@ video {
 .focus\:placeholder-white:focus::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
+}
+
+.focus\:placeholder-darksparent:focus::-moz-placeholder {
+  color: rgba(0,0,0, 0.5);
+}
+
+.focus\:placeholder-darksparent:focus:-ms-input-placeholder {
+  color: rgba(0,0,0, 0.5);
+}
+
+.focus\:placeholder-darksparent:focus::placeholder {
+  color: rgba(0,0,0, 0.5);
 }
 
 .focus\:placeholder-blue-light:focus::-moz-placeholder {
@@ -13990,6 +14097,10 @@ video {
   --tw-ring-offset-color: #fff;
 }
 
+.ring-offset-darksparent {
+  --tw-ring-offset-color: rgba(0,0,0, 0.5);
+}
+
 .ring-offset-blue-light {
   --tw-ring-offset-color: #2B4965;
 }
@@ -14078,6 +14189,10 @@ video {
   --tw-ring-offset-color: #fff;
 }
 
+.focus-within\:ring-offset-darksparent:focus-within {
+  --tw-ring-offset-color: rgba(0,0,0, 0.5);
+}
+
 .focus-within\:ring-offset-blue-light:focus-within {
   --tw-ring-offset-color: #2B4965;
 }
@@ -14164,6 +14279,10 @@ video {
 
 .focus\:ring-offset-white:focus {
   --tw-ring-offset-color: #fff;
+}
+
+.focus\:ring-offset-darksparent:focus {
+  --tw-ring-offset-color: rgba(0,0,0, 0.5);
 }
 
 .focus\:ring-offset-blue-light:focus {
@@ -14326,6 +14445,10 @@ video {
   --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
 }
 
+.ring-darksparent {
+  --tw-ring-color: rgba(0,0,0, 0.5);
+}
+
 .ring-blue-light {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(43, 73, 101, var(--tw-ring-opacity));
@@ -14434,6 +14557,10 @@ video {
   --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
 }
 
+.focus-within\:ring-darksparent:focus-within {
+  --tw-ring-color: rgba(0,0,0, 0.5);
+}
+
 .focus-within\:ring-blue-light:focus-within {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(43, 73, 101, var(--tw-ring-opacity));
@@ -14540,6 +14667,10 @@ video {
 .focus\:ring-white:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
+}
+
+.focus\:ring-darksparent:focus {
+  --tw-ring-color: rgba(0,0,0, 0.5);
 }
 
 .focus\:ring-blue-light:focus {
@@ -14874,6 +15005,10 @@ video {
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
+.text-darksparent {
+  color: rgba(0,0,0, 0.5);
+}
+
 .text-blue-light {
   --tw-text-opacity: 1;
   color: rgba(43, 73, 101, var(--tw-text-opacity));
@@ -14980,6 +15115,10 @@ video {
 .group:hover .group-hover\:text-white {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:text-darksparent {
+  color: rgba(0,0,0, 0.5);
 }
 
 .group:hover .group-hover\:text-blue-light {
@@ -15090,6 +15229,10 @@ video {
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
+.focus-within\:text-darksparent:focus-within {
+  color: rgba(0,0,0, 0.5);
+}
+
 .focus-within\:text-blue-light:focus-within {
   --tw-text-opacity: 1;
   color: rgba(43, 73, 101, var(--tw-text-opacity));
@@ -15198,6 +15341,10 @@ video {
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
+.hover\:text-darksparent:hover {
+  color: rgba(0,0,0, 0.5);
+}
+
 .hover\:text-blue-light:hover {
   --tw-text-opacity: 1;
   color: rgba(43, 73, 101, var(--tw-text-opacity));
@@ -15304,6 +15451,10 @@ video {
 .focus\:text-white:focus {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.focus\:text-darksparent:focus {
+  color: rgba(0,0,0, 0.5);
 }
 
 .focus\:text-blue-light:focus {
@@ -21543,6 +21694,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-divide-opacity));
   }
 
+  .sm\:divide-darksparent > :not([hidden]) ~ :not([hidden]) {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .sm\:divide-blue-light > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-divide-opacity));
@@ -21835,6 +21990,10 @@ table a {
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   }
 
+  .sm\:bg-darksparent {
+    background-color: rgba(0,0,0, 0.5);
+  }
+
   .sm\:bg-blue-light {
     --tw-bg-opacity: 1;
     background-color: rgba(43, 73, 101, var(--tw-bg-opacity));
@@ -21941,6 +22100,10 @@ table a {
   .group:hover .sm\:group-hover\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .group:hover .sm\:group-hover\:bg-darksparent {
+    background-color: rgba(0,0,0, 0.5);
   }
 
   .group:hover .sm\:group-hover\:bg-blue-light {
@@ -22051,6 +22214,10 @@ table a {
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   }
 
+  .sm\:focus-within\:bg-darksparent:focus-within {
+    background-color: rgba(0,0,0, 0.5);
+  }
+
   .sm\:focus-within\:bg-blue-light:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(43, 73, 101, var(--tw-bg-opacity));
@@ -22159,6 +22326,10 @@ table a {
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   }
 
+  .sm\:hover\:bg-darksparent:hover {
+    background-color: rgba(0,0,0, 0.5);
+  }
+
   .sm\:hover\:bg-blue-light:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(43, 73, 101, var(--tw-bg-opacity));
@@ -22265,6 +22436,10 @@ table a {
   .sm\:focus\:bg-white:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .sm\:focus\:bg-darksparent:focus {
+    background-color: rgba(0,0,0, 0.5);
   }
 
   .sm\:focus\:bg-blue-light:focus {
@@ -22413,6 +22588,11 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .sm\:from-darksparent {
+    --tw-gradient-from: rgba(0,0,0, 0.5);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .sm\:from-blue-light {
     --tw-gradient-from: #2B4965;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(43, 73, 101, 0));
@@ -22509,6 +22689,10 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .sm\:via-darksparent {
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0,0,0, 0.5), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .sm\:via-blue-light {
     --tw-gradient-stops: var(--tw-gradient-from), #2B4965, var(--tw-gradient-to, rgba(43, 73, 101, 0));
   }
@@ -22595,6 +22779,10 @@ table a {
 
   .sm\:to-white {
     --tw-gradient-to: #fff;
+  }
+
+  .sm\:to-darksparent {
+    --tw-gradient-to: rgba(0,0,0, 0.5);
   }
 
   .sm\:to-blue-light {
@@ -22699,6 +22887,11 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .sm\:hover\:from-darksparent:hover {
+    --tw-gradient-from: rgba(0,0,0, 0.5);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .sm\:hover\:from-blue-light:hover {
     --tw-gradient-from: #2B4965;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(43, 73, 101, 0));
@@ -22795,6 +22988,10 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .sm\:hover\:via-darksparent:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0,0,0, 0.5), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .sm\:hover\:via-blue-light:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #2B4965, var(--tw-gradient-to, rgba(43, 73, 101, 0));
   }
@@ -22881,6 +23078,10 @@ table a {
 
   .sm\:hover\:to-white:hover {
     --tw-gradient-to: #fff;
+  }
+
+  .sm\:hover\:to-darksparent:hover {
+    --tw-gradient-to: rgba(0,0,0, 0.5);
   }
 
   .sm\:hover\:to-blue-light:hover {
@@ -22985,6 +23186,11 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .sm\:focus\:from-darksparent:focus {
+    --tw-gradient-from: rgba(0,0,0, 0.5);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .sm\:focus\:from-blue-light:focus {
     --tw-gradient-from: #2B4965;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(43, 73, 101, 0));
@@ -23081,6 +23287,10 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .sm\:focus\:via-darksparent:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0,0,0, 0.5), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .sm\:focus\:via-blue-light:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #2B4965, var(--tw-gradient-to, rgba(43, 73, 101, 0));
   }
@@ -23167,6 +23377,10 @@ table a {
 
   .sm\:focus\:to-white:focus {
     --tw-gradient-to: #fff;
+  }
+
+  .sm\:focus\:to-darksparent:focus {
+    --tw-gradient-to: rgba(0,0,0, 0.5);
   }
 
   .sm\:focus\:to-blue-light:focus {
@@ -23649,6 +23863,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
   }
 
+  .sm\:border-darksparent {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .sm\:border-blue-light {
     --tw-border-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-border-opacity));
@@ -23755,6 +23973,10 @@ table a {
   .group:hover .sm\:group-hover\:border-white {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  }
+
+  .group:hover .sm\:group-hover\:border-darksparent {
+    border-color: rgba(0,0,0, 0.5);
   }
 
   .group:hover .sm\:group-hover\:border-blue-light {
@@ -23865,6 +24087,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
   }
 
+  .sm\:focus-within\:border-darksparent:focus-within {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .sm\:focus-within\:border-blue-light:focus-within {
     --tw-border-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-border-opacity));
@@ -23973,6 +24199,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
   }
 
+  .sm\:hover\:border-darksparent:hover {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .sm\:hover\:border-blue-light:hover {
     --tw-border-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-border-opacity));
@@ -24079,6 +24309,10 @@ table a {
   .sm\:focus\:border-white:focus {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  }
+
+  .sm\:focus\:border-darksparent:focus {
+    border-color: rgba(0,0,0, 0.5);
   }
 
   .sm\:focus\:border-blue-light:focus {
@@ -29916,6 +30150,18 @@ table a {
     color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
   }
 
+  .sm\:placeholder-darksparent::-moz-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .sm\:placeholder-darksparent:-ms-input-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .sm\:placeholder-darksparent::placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .sm\:placeholder-blue-light::-moz-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-placeholder-opacity));
@@ -30238,6 +30484,18 @@ table a {
   .sm\:focus\:placeholder-white:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-darksparent:focus::-moz-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .sm\:focus\:placeholder-darksparent:focus:-ms-input-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .sm\:focus\:placeholder-darksparent:focus::placeholder {
+    color: rgba(0,0,0, 0.5);
   }
 
   .sm\:focus\:placeholder-blue-light:focus::-moz-placeholder {
@@ -33945,6 +34203,10 @@ table a {
     --tw-ring-offset-color: #fff;
   }
 
+  .sm\:ring-offset-darksparent {
+    --tw-ring-offset-color: rgba(0,0,0, 0.5);
+  }
+
   .sm\:ring-offset-blue-light {
     --tw-ring-offset-color: #2B4965;
   }
@@ -34033,6 +34295,10 @@ table a {
     --tw-ring-offset-color: #fff;
   }
 
+  .sm\:focus-within\:ring-offset-darksparent:focus-within {
+    --tw-ring-offset-color: rgba(0,0,0, 0.5);
+  }
+
   .sm\:focus-within\:ring-offset-blue-light:focus-within {
     --tw-ring-offset-color: #2B4965;
   }
@@ -34119,6 +34385,10 @@ table a {
 
   .sm\:focus\:ring-offset-white:focus {
     --tw-ring-offset-color: #fff;
+  }
+
+  .sm\:focus\:ring-offset-darksparent:focus {
+    --tw-ring-offset-color: rgba(0,0,0, 0.5);
   }
 
   .sm\:focus\:ring-offset-blue-light:focus {
@@ -34281,6 +34551,10 @@ table a {
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
   }
 
+  .sm\:ring-darksparent {
+    --tw-ring-color: rgba(0,0,0, 0.5);
+  }
+
   .sm\:ring-blue-light {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(43, 73, 101, var(--tw-ring-opacity));
@@ -34389,6 +34663,10 @@ table a {
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
   }
 
+  .sm\:focus-within\:ring-darksparent:focus-within {
+    --tw-ring-color: rgba(0,0,0, 0.5);
+  }
+
   .sm\:focus-within\:ring-blue-light:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(43, 73, 101, var(--tw-ring-opacity));
@@ -34495,6 +34773,10 @@ table a {
   .sm\:focus\:ring-white:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
+  }
+
+  .sm\:focus\:ring-darksparent:focus {
+    --tw-ring-color: rgba(0,0,0, 0.5);
   }
 
   .sm\:focus\:ring-blue-light:focus {
@@ -34829,6 +35111,10 @@ table a {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
+  .sm\:text-darksparent {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .sm\:text-blue-light {
     --tw-text-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-text-opacity));
@@ -34935,6 +35221,10 @@ table a {
   .group:hover .sm\:group-hover\:text-white {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
+  }
+
+  .group:hover .sm\:group-hover\:text-darksparent {
+    color: rgba(0,0,0, 0.5);
   }
 
   .group:hover .sm\:group-hover\:text-blue-light {
@@ -35045,6 +35335,10 @@ table a {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
+  .sm\:focus-within\:text-darksparent:focus-within {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .sm\:focus-within\:text-blue-light:focus-within {
     --tw-text-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-text-opacity));
@@ -35153,6 +35447,10 @@ table a {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
+  .sm\:hover\:text-darksparent:hover {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .sm\:hover\:text-blue-light:hover {
     --tw-text-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-text-opacity));
@@ -35259,6 +35557,10 @@ table a {
   .sm\:focus\:text-white:focus {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
+  }
+
+  .sm\:focus\:text-darksparent:focus {
+    color: rgba(0,0,0, 0.5);
   }
 
   .sm\:focus\:text-blue-light:focus {
@@ -41180,6 +41482,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-divide-opacity));
   }
 
+  .md\:divide-darksparent > :not([hidden]) ~ :not([hidden]) {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .md\:divide-blue-light > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-divide-opacity));
@@ -41472,6 +41778,10 @@ table a {
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   }
 
+  .md\:bg-darksparent {
+    background-color: rgba(0,0,0, 0.5);
+  }
+
   .md\:bg-blue-light {
     --tw-bg-opacity: 1;
     background-color: rgba(43, 73, 101, var(--tw-bg-opacity));
@@ -41578,6 +41888,10 @@ table a {
   .group:hover .md\:group-hover\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .group:hover .md\:group-hover\:bg-darksparent {
+    background-color: rgba(0,0,0, 0.5);
   }
 
   .group:hover .md\:group-hover\:bg-blue-light {
@@ -41688,6 +42002,10 @@ table a {
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   }
 
+  .md\:focus-within\:bg-darksparent:focus-within {
+    background-color: rgba(0,0,0, 0.5);
+  }
+
   .md\:focus-within\:bg-blue-light:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(43, 73, 101, var(--tw-bg-opacity));
@@ -41796,6 +42114,10 @@ table a {
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   }
 
+  .md\:hover\:bg-darksparent:hover {
+    background-color: rgba(0,0,0, 0.5);
+  }
+
   .md\:hover\:bg-blue-light:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(43, 73, 101, var(--tw-bg-opacity));
@@ -41902,6 +42224,10 @@ table a {
   .md\:focus\:bg-white:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .md\:focus\:bg-darksparent:focus {
+    background-color: rgba(0,0,0, 0.5);
   }
 
   .md\:focus\:bg-blue-light:focus {
@@ -42050,6 +42376,11 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .md\:from-darksparent {
+    --tw-gradient-from: rgba(0,0,0, 0.5);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .md\:from-blue-light {
     --tw-gradient-from: #2B4965;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(43, 73, 101, 0));
@@ -42146,6 +42477,10 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .md\:via-darksparent {
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0,0,0, 0.5), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .md\:via-blue-light {
     --tw-gradient-stops: var(--tw-gradient-from), #2B4965, var(--tw-gradient-to, rgba(43, 73, 101, 0));
   }
@@ -42232,6 +42567,10 @@ table a {
 
   .md\:to-white {
     --tw-gradient-to: #fff;
+  }
+
+  .md\:to-darksparent {
+    --tw-gradient-to: rgba(0,0,0, 0.5);
   }
 
   .md\:to-blue-light {
@@ -42336,6 +42675,11 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .md\:hover\:from-darksparent:hover {
+    --tw-gradient-from: rgba(0,0,0, 0.5);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .md\:hover\:from-blue-light:hover {
     --tw-gradient-from: #2B4965;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(43, 73, 101, 0));
@@ -42432,6 +42776,10 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .md\:hover\:via-darksparent:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0,0,0, 0.5), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .md\:hover\:via-blue-light:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #2B4965, var(--tw-gradient-to, rgba(43, 73, 101, 0));
   }
@@ -42518,6 +42866,10 @@ table a {
 
   .md\:hover\:to-white:hover {
     --tw-gradient-to: #fff;
+  }
+
+  .md\:hover\:to-darksparent:hover {
+    --tw-gradient-to: rgba(0,0,0, 0.5);
   }
 
   .md\:hover\:to-blue-light:hover {
@@ -42622,6 +42974,11 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .md\:focus\:from-darksparent:focus {
+    --tw-gradient-from: rgba(0,0,0, 0.5);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .md\:focus\:from-blue-light:focus {
     --tw-gradient-from: #2B4965;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(43, 73, 101, 0));
@@ -42718,6 +43075,10 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .md\:focus\:via-darksparent:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0,0,0, 0.5), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .md\:focus\:via-blue-light:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #2B4965, var(--tw-gradient-to, rgba(43, 73, 101, 0));
   }
@@ -42804,6 +43165,10 @@ table a {
 
   .md\:focus\:to-white:focus {
     --tw-gradient-to: #fff;
+  }
+
+  .md\:focus\:to-darksparent:focus {
+    --tw-gradient-to: rgba(0,0,0, 0.5);
   }
 
   .md\:focus\:to-blue-light:focus {
@@ -43286,6 +43651,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
   }
 
+  .md\:border-darksparent {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .md\:border-blue-light {
     --tw-border-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-border-opacity));
@@ -43392,6 +43761,10 @@ table a {
   .group:hover .md\:group-hover\:border-white {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  }
+
+  .group:hover .md\:group-hover\:border-darksparent {
+    border-color: rgba(0,0,0, 0.5);
   }
 
   .group:hover .md\:group-hover\:border-blue-light {
@@ -43502,6 +43875,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
   }
 
+  .md\:focus-within\:border-darksparent:focus-within {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .md\:focus-within\:border-blue-light:focus-within {
     --tw-border-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-border-opacity));
@@ -43610,6 +43987,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
   }
 
+  .md\:hover\:border-darksparent:hover {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .md\:hover\:border-blue-light:hover {
     --tw-border-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-border-opacity));
@@ -43716,6 +44097,10 @@ table a {
   .md\:focus\:border-white:focus {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  }
+
+  .md\:focus\:border-darksparent:focus {
+    border-color: rgba(0,0,0, 0.5);
   }
 
   .md\:focus\:border-blue-light:focus {
@@ -49553,6 +49938,18 @@ table a {
     color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
   }
 
+  .md\:placeholder-darksparent::-moz-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .md\:placeholder-darksparent:-ms-input-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .md\:placeholder-darksparent::placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .md\:placeholder-blue-light::-moz-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-placeholder-opacity));
@@ -49875,6 +50272,18 @@ table a {
   .md\:focus\:placeholder-white:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-darksparent:focus::-moz-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .md\:focus\:placeholder-darksparent:focus:-ms-input-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .md\:focus\:placeholder-darksparent:focus::placeholder {
+    color: rgba(0,0,0, 0.5);
   }
 
   .md\:focus\:placeholder-blue-light:focus::-moz-placeholder {
@@ -53582,6 +53991,10 @@ table a {
     --tw-ring-offset-color: #fff;
   }
 
+  .md\:ring-offset-darksparent {
+    --tw-ring-offset-color: rgba(0,0,0, 0.5);
+  }
+
   .md\:ring-offset-blue-light {
     --tw-ring-offset-color: #2B4965;
   }
@@ -53670,6 +54083,10 @@ table a {
     --tw-ring-offset-color: #fff;
   }
 
+  .md\:focus-within\:ring-offset-darksparent:focus-within {
+    --tw-ring-offset-color: rgba(0,0,0, 0.5);
+  }
+
   .md\:focus-within\:ring-offset-blue-light:focus-within {
     --tw-ring-offset-color: #2B4965;
   }
@@ -53756,6 +54173,10 @@ table a {
 
   .md\:focus\:ring-offset-white:focus {
     --tw-ring-offset-color: #fff;
+  }
+
+  .md\:focus\:ring-offset-darksparent:focus {
+    --tw-ring-offset-color: rgba(0,0,0, 0.5);
   }
 
   .md\:focus\:ring-offset-blue-light:focus {
@@ -53918,6 +54339,10 @@ table a {
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
   }
 
+  .md\:ring-darksparent {
+    --tw-ring-color: rgba(0,0,0, 0.5);
+  }
+
   .md\:ring-blue-light {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(43, 73, 101, var(--tw-ring-opacity));
@@ -54026,6 +54451,10 @@ table a {
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
   }
 
+  .md\:focus-within\:ring-darksparent:focus-within {
+    --tw-ring-color: rgba(0,0,0, 0.5);
+  }
+
   .md\:focus-within\:ring-blue-light:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(43, 73, 101, var(--tw-ring-opacity));
@@ -54132,6 +54561,10 @@ table a {
   .md\:focus\:ring-white:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
+  }
+
+  .md\:focus\:ring-darksparent:focus {
+    --tw-ring-color: rgba(0,0,0, 0.5);
   }
 
   .md\:focus\:ring-blue-light:focus {
@@ -54466,6 +54899,10 @@ table a {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
+  .md\:text-darksparent {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .md\:text-blue-light {
     --tw-text-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-text-opacity));
@@ -54572,6 +55009,10 @@ table a {
   .group:hover .md\:group-hover\:text-white {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
+  }
+
+  .group:hover .md\:group-hover\:text-darksparent {
+    color: rgba(0,0,0, 0.5);
   }
 
   .group:hover .md\:group-hover\:text-blue-light {
@@ -54682,6 +55123,10 @@ table a {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
+  .md\:focus-within\:text-darksparent:focus-within {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .md\:focus-within\:text-blue-light:focus-within {
     --tw-text-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-text-opacity));
@@ -54790,6 +55235,10 @@ table a {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
+  .md\:hover\:text-darksparent:hover {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .md\:hover\:text-blue-light:hover {
     --tw-text-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-text-opacity));
@@ -54896,6 +55345,10 @@ table a {
   .md\:focus\:text-white:focus {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
+  }
+
+  .md\:focus\:text-darksparent:focus {
+    color: rgba(0,0,0, 0.5);
   }
 
   .md\:focus\:text-blue-light:focus {
@@ -60817,6 +61270,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-divide-opacity));
   }
 
+  .lg\:divide-darksparent > :not([hidden]) ~ :not([hidden]) {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .lg\:divide-blue-light > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-divide-opacity));
@@ -61109,6 +61566,10 @@ table a {
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   }
 
+  .lg\:bg-darksparent {
+    background-color: rgba(0,0,0, 0.5);
+  }
+
   .lg\:bg-blue-light {
     --tw-bg-opacity: 1;
     background-color: rgba(43, 73, 101, var(--tw-bg-opacity));
@@ -61215,6 +61676,10 @@ table a {
   .group:hover .lg\:group-hover\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .group:hover .lg\:group-hover\:bg-darksparent {
+    background-color: rgba(0,0,0, 0.5);
   }
 
   .group:hover .lg\:group-hover\:bg-blue-light {
@@ -61325,6 +61790,10 @@ table a {
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   }
 
+  .lg\:focus-within\:bg-darksparent:focus-within {
+    background-color: rgba(0,0,0, 0.5);
+  }
+
   .lg\:focus-within\:bg-blue-light:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(43, 73, 101, var(--tw-bg-opacity));
@@ -61433,6 +61902,10 @@ table a {
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   }
 
+  .lg\:hover\:bg-darksparent:hover {
+    background-color: rgba(0,0,0, 0.5);
+  }
+
   .lg\:hover\:bg-blue-light:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(43, 73, 101, var(--tw-bg-opacity));
@@ -61539,6 +62012,10 @@ table a {
   .lg\:focus\:bg-white:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .lg\:focus\:bg-darksparent:focus {
+    background-color: rgba(0,0,0, 0.5);
   }
 
   .lg\:focus\:bg-blue-light:focus {
@@ -61687,6 +62164,11 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .lg\:from-darksparent {
+    --tw-gradient-from: rgba(0,0,0, 0.5);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .lg\:from-blue-light {
     --tw-gradient-from: #2B4965;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(43, 73, 101, 0));
@@ -61783,6 +62265,10 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .lg\:via-darksparent {
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0,0,0, 0.5), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .lg\:via-blue-light {
     --tw-gradient-stops: var(--tw-gradient-from), #2B4965, var(--tw-gradient-to, rgba(43, 73, 101, 0));
   }
@@ -61869,6 +62355,10 @@ table a {
 
   .lg\:to-white {
     --tw-gradient-to: #fff;
+  }
+
+  .lg\:to-darksparent {
+    --tw-gradient-to: rgba(0,0,0, 0.5);
   }
 
   .lg\:to-blue-light {
@@ -61973,6 +62463,11 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .lg\:hover\:from-darksparent:hover {
+    --tw-gradient-from: rgba(0,0,0, 0.5);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .lg\:hover\:from-blue-light:hover {
     --tw-gradient-from: #2B4965;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(43, 73, 101, 0));
@@ -62069,6 +62564,10 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .lg\:hover\:via-darksparent:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0,0,0, 0.5), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .lg\:hover\:via-blue-light:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #2B4965, var(--tw-gradient-to, rgba(43, 73, 101, 0));
   }
@@ -62155,6 +62654,10 @@ table a {
 
   .lg\:hover\:to-white:hover {
     --tw-gradient-to: #fff;
+  }
+
+  .lg\:hover\:to-darksparent:hover {
+    --tw-gradient-to: rgba(0,0,0, 0.5);
   }
 
   .lg\:hover\:to-blue-light:hover {
@@ -62259,6 +62762,11 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .lg\:focus\:from-darksparent:focus {
+    --tw-gradient-from: rgba(0,0,0, 0.5);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .lg\:focus\:from-blue-light:focus {
     --tw-gradient-from: #2B4965;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(43, 73, 101, 0));
@@ -62355,6 +62863,10 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .lg\:focus\:via-darksparent:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0,0,0, 0.5), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .lg\:focus\:via-blue-light:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #2B4965, var(--tw-gradient-to, rgba(43, 73, 101, 0));
   }
@@ -62441,6 +62953,10 @@ table a {
 
   .lg\:focus\:to-white:focus {
     --tw-gradient-to: #fff;
+  }
+
+  .lg\:focus\:to-darksparent:focus {
+    --tw-gradient-to: rgba(0,0,0, 0.5);
   }
 
   .lg\:focus\:to-blue-light:focus {
@@ -62923,6 +63439,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
   }
 
+  .lg\:border-darksparent {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .lg\:border-blue-light {
     --tw-border-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-border-opacity));
@@ -63029,6 +63549,10 @@ table a {
   .group:hover .lg\:group-hover\:border-white {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  }
+
+  .group:hover .lg\:group-hover\:border-darksparent {
+    border-color: rgba(0,0,0, 0.5);
   }
 
   .group:hover .lg\:group-hover\:border-blue-light {
@@ -63139,6 +63663,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
   }
 
+  .lg\:focus-within\:border-darksparent:focus-within {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .lg\:focus-within\:border-blue-light:focus-within {
     --tw-border-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-border-opacity));
@@ -63247,6 +63775,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
   }
 
+  .lg\:hover\:border-darksparent:hover {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .lg\:hover\:border-blue-light:hover {
     --tw-border-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-border-opacity));
@@ -63353,6 +63885,10 @@ table a {
   .lg\:focus\:border-white:focus {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  }
+
+  .lg\:focus\:border-darksparent:focus {
+    border-color: rgba(0,0,0, 0.5);
   }
 
   .lg\:focus\:border-blue-light:focus {
@@ -69190,6 +69726,18 @@ table a {
     color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
   }
 
+  .lg\:placeholder-darksparent::-moz-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .lg\:placeholder-darksparent:-ms-input-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .lg\:placeholder-darksparent::placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .lg\:placeholder-blue-light::-moz-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-placeholder-opacity));
@@ -69512,6 +70060,18 @@ table a {
   .lg\:focus\:placeholder-white:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-darksparent:focus::-moz-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .lg\:focus\:placeholder-darksparent:focus:-ms-input-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .lg\:focus\:placeholder-darksparent:focus::placeholder {
+    color: rgba(0,0,0, 0.5);
   }
 
   .lg\:focus\:placeholder-blue-light:focus::-moz-placeholder {
@@ -73219,6 +73779,10 @@ table a {
     --tw-ring-offset-color: #fff;
   }
 
+  .lg\:ring-offset-darksparent {
+    --tw-ring-offset-color: rgba(0,0,0, 0.5);
+  }
+
   .lg\:ring-offset-blue-light {
     --tw-ring-offset-color: #2B4965;
   }
@@ -73307,6 +73871,10 @@ table a {
     --tw-ring-offset-color: #fff;
   }
 
+  .lg\:focus-within\:ring-offset-darksparent:focus-within {
+    --tw-ring-offset-color: rgba(0,0,0, 0.5);
+  }
+
   .lg\:focus-within\:ring-offset-blue-light:focus-within {
     --tw-ring-offset-color: #2B4965;
   }
@@ -73393,6 +73961,10 @@ table a {
 
   .lg\:focus\:ring-offset-white:focus {
     --tw-ring-offset-color: #fff;
+  }
+
+  .lg\:focus\:ring-offset-darksparent:focus {
+    --tw-ring-offset-color: rgba(0,0,0, 0.5);
   }
 
   .lg\:focus\:ring-offset-blue-light:focus {
@@ -73555,6 +74127,10 @@ table a {
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
   }
 
+  .lg\:ring-darksparent {
+    --tw-ring-color: rgba(0,0,0, 0.5);
+  }
+
   .lg\:ring-blue-light {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(43, 73, 101, var(--tw-ring-opacity));
@@ -73663,6 +74239,10 @@ table a {
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
   }
 
+  .lg\:focus-within\:ring-darksparent:focus-within {
+    --tw-ring-color: rgba(0,0,0, 0.5);
+  }
+
   .lg\:focus-within\:ring-blue-light:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(43, 73, 101, var(--tw-ring-opacity));
@@ -73769,6 +74349,10 @@ table a {
   .lg\:focus\:ring-white:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
+  }
+
+  .lg\:focus\:ring-darksparent:focus {
+    --tw-ring-color: rgba(0,0,0, 0.5);
   }
 
   .lg\:focus\:ring-blue-light:focus {
@@ -74103,6 +74687,10 @@ table a {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
+  .lg\:text-darksparent {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .lg\:text-blue-light {
     --tw-text-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-text-opacity));
@@ -74209,6 +74797,10 @@ table a {
   .group:hover .lg\:group-hover\:text-white {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
+  }
+
+  .group:hover .lg\:group-hover\:text-darksparent {
+    color: rgba(0,0,0, 0.5);
   }
 
   .group:hover .lg\:group-hover\:text-blue-light {
@@ -74319,6 +74911,10 @@ table a {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
+  .lg\:focus-within\:text-darksparent:focus-within {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .lg\:focus-within\:text-blue-light:focus-within {
     --tw-text-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-text-opacity));
@@ -74427,6 +75023,10 @@ table a {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
+  .lg\:hover\:text-darksparent:hover {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .lg\:hover\:text-blue-light:hover {
     --tw-text-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-text-opacity));
@@ -74533,6 +75133,10 @@ table a {
   .lg\:focus\:text-white:focus {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
+  }
+
+  .lg\:focus\:text-darksparent:focus {
+    color: rgba(0,0,0, 0.5);
   }
 
   .lg\:focus\:text-blue-light:focus {
@@ -80454,6 +81058,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-divide-opacity));
   }
 
+  .xl\:divide-darksparent > :not([hidden]) ~ :not([hidden]) {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .xl\:divide-blue-light > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-divide-opacity));
@@ -80746,6 +81354,10 @@ table a {
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   }
 
+  .xl\:bg-darksparent {
+    background-color: rgba(0,0,0, 0.5);
+  }
+
   .xl\:bg-blue-light {
     --tw-bg-opacity: 1;
     background-color: rgba(43, 73, 101, var(--tw-bg-opacity));
@@ -80852,6 +81464,10 @@ table a {
   .group:hover .xl\:group-hover\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .group:hover .xl\:group-hover\:bg-darksparent {
+    background-color: rgba(0,0,0, 0.5);
   }
 
   .group:hover .xl\:group-hover\:bg-blue-light {
@@ -80962,6 +81578,10 @@ table a {
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   }
 
+  .xl\:focus-within\:bg-darksparent:focus-within {
+    background-color: rgba(0,0,0, 0.5);
+  }
+
   .xl\:focus-within\:bg-blue-light:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(43, 73, 101, var(--tw-bg-opacity));
@@ -81070,6 +81690,10 @@ table a {
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   }
 
+  .xl\:hover\:bg-darksparent:hover {
+    background-color: rgba(0,0,0, 0.5);
+  }
+
   .xl\:hover\:bg-blue-light:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(43, 73, 101, var(--tw-bg-opacity));
@@ -81176,6 +81800,10 @@ table a {
   .xl\:focus\:bg-white:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .xl\:focus\:bg-darksparent:focus {
+    background-color: rgba(0,0,0, 0.5);
   }
 
   .xl\:focus\:bg-blue-light:focus {
@@ -81324,6 +81952,11 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .xl\:from-darksparent {
+    --tw-gradient-from: rgba(0,0,0, 0.5);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .xl\:from-blue-light {
     --tw-gradient-from: #2B4965;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(43, 73, 101, 0));
@@ -81420,6 +82053,10 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .xl\:via-darksparent {
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0,0,0, 0.5), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .xl\:via-blue-light {
     --tw-gradient-stops: var(--tw-gradient-from), #2B4965, var(--tw-gradient-to, rgba(43, 73, 101, 0));
   }
@@ -81506,6 +82143,10 @@ table a {
 
   .xl\:to-white {
     --tw-gradient-to: #fff;
+  }
+
+  .xl\:to-darksparent {
+    --tw-gradient-to: rgba(0,0,0, 0.5);
   }
 
   .xl\:to-blue-light {
@@ -81610,6 +82251,11 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .xl\:hover\:from-darksparent:hover {
+    --tw-gradient-from: rgba(0,0,0, 0.5);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .xl\:hover\:from-blue-light:hover {
     --tw-gradient-from: #2B4965;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(43, 73, 101, 0));
@@ -81706,6 +82352,10 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .xl\:hover\:via-darksparent:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0,0,0, 0.5), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .xl\:hover\:via-blue-light:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #2B4965, var(--tw-gradient-to, rgba(43, 73, 101, 0));
   }
@@ -81792,6 +82442,10 @@ table a {
 
   .xl\:hover\:to-white:hover {
     --tw-gradient-to: #fff;
+  }
+
+  .xl\:hover\:to-darksparent:hover {
+    --tw-gradient-to: rgba(0,0,0, 0.5);
   }
 
   .xl\:hover\:to-blue-light:hover {
@@ -81896,6 +82550,11 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .xl\:focus\:from-darksparent:focus {
+    --tw-gradient-from: rgba(0,0,0, 0.5);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .xl\:focus\:from-blue-light:focus {
     --tw-gradient-from: #2B4965;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(43, 73, 101, 0));
@@ -81992,6 +82651,10 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .xl\:focus\:via-darksparent:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0,0,0, 0.5), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .xl\:focus\:via-blue-light:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #2B4965, var(--tw-gradient-to, rgba(43, 73, 101, 0));
   }
@@ -82078,6 +82741,10 @@ table a {
 
   .xl\:focus\:to-white:focus {
     --tw-gradient-to: #fff;
+  }
+
+  .xl\:focus\:to-darksparent:focus {
+    --tw-gradient-to: rgba(0,0,0, 0.5);
   }
 
   .xl\:focus\:to-blue-light:focus {
@@ -82560,6 +83227,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
   }
 
+  .xl\:border-darksparent {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .xl\:border-blue-light {
     --tw-border-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-border-opacity));
@@ -82666,6 +83337,10 @@ table a {
   .group:hover .xl\:group-hover\:border-white {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  }
+
+  .group:hover .xl\:group-hover\:border-darksparent {
+    border-color: rgba(0,0,0, 0.5);
   }
 
   .group:hover .xl\:group-hover\:border-blue-light {
@@ -82776,6 +83451,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
   }
 
+  .xl\:focus-within\:border-darksparent:focus-within {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .xl\:focus-within\:border-blue-light:focus-within {
     --tw-border-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-border-opacity));
@@ -82884,6 +83563,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
   }
 
+  .xl\:hover\:border-darksparent:hover {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .xl\:hover\:border-blue-light:hover {
     --tw-border-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-border-opacity));
@@ -82990,6 +83673,10 @@ table a {
   .xl\:focus\:border-white:focus {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  }
+
+  .xl\:focus\:border-darksparent:focus {
+    border-color: rgba(0,0,0, 0.5);
   }
 
   .xl\:focus\:border-blue-light:focus {
@@ -88827,6 +89514,18 @@ table a {
     color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
   }
 
+  .xl\:placeholder-darksparent::-moz-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .xl\:placeholder-darksparent:-ms-input-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .xl\:placeholder-darksparent::placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .xl\:placeholder-blue-light::-moz-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-placeholder-opacity));
@@ -89149,6 +89848,18 @@ table a {
   .xl\:focus\:placeholder-white:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-darksparent:focus::-moz-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .xl\:focus\:placeholder-darksparent:focus:-ms-input-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .xl\:focus\:placeholder-darksparent:focus::placeholder {
+    color: rgba(0,0,0, 0.5);
   }
 
   .xl\:focus\:placeholder-blue-light:focus::-moz-placeholder {
@@ -92856,6 +93567,10 @@ table a {
     --tw-ring-offset-color: #fff;
   }
 
+  .xl\:ring-offset-darksparent {
+    --tw-ring-offset-color: rgba(0,0,0, 0.5);
+  }
+
   .xl\:ring-offset-blue-light {
     --tw-ring-offset-color: #2B4965;
   }
@@ -92944,6 +93659,10 @@ table a {
     --tw-ring-offset-color: #fff;
   }
 
+  .xl\:focus-within\:ring-offset-darksparent:focus-within {
+    --tw-ring-offset-color: rgba(0,0,0, 0.5);
+  }
+
   .xl\:focus-within\:ring-offset-blue-light:focus-within {
     --tw-ring-offset-color: #2B4965;
   }
@@ -93030,6 +93749,10 @@ table a {
 
   .xl\:focus\:ring-offset-white:focus {
     --tw-ring-offset-color: #fff;
+  }
+
+  .xl\:focus\:ring-offset-darksparent:focus {
+    --tw-ring-offset-color: rgba(0,0,0, 0.5);
   }
 
   .xl\:focus\:ring-offset-blue-light:focus {
@@ -93192,6 +93915,10 @@ table a {
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
   }
 
+  .xl\:ring-darksparent {
+    --tw-ring-color: rgba(0,0,0, 0.5);
+  }
+
   .xl\:ring-blue-light {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(43, 73, 101, var(--tw-ring-opacity));
@@ -93300,6 +94027,10 @@ table a {
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
   }
 
+  .xl\:focus-within\:ring-darksparent:focus-within {
+    --tw-ring-color: rgba(0,0,0, 0.5);
+  }
+
   .xl\:focus-within\:ring-blue-light:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(43, 73, 101, var(--tw-ring-opacity));
@@ -93406,6 +94137,10 @@ table a {
   .xl\:focus\:ring-white:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
+  }
+
+  .xl\:focus\:ring-darksparent:focus {
+    --tw-ring-color: rgba(0,0,0, 0.5);
   }
 
   .xl\:focus\:ring-blue-light:focus {
@@ -93740,6 +94475,10 @@ table a {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
+  .xl\:text-darksparent {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .xl\:text-blue-light {
     --tw-text-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-text-opacity));
@@ -93846,6 +94585,10 @@ table a {
   .group:hover .xl\:group-hover\:text-white {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
+  }
+
+  .group:hover .xl\:group-hover\:text-darksparent {
+    color: rgba(0,0,0, 0.5);
   }
 
   .group:hover .xl\:group-hover\:text-blue-light {
@@ -93956,6 +94699,10 @@ table a {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
+  .xl\:focus-within\:text-darksparent:focus-within {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .xl\:focus-within\:text-blue-light:focus-within {
     --tw-text-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-text-opacity));
@@ -94064,6 +94811,10 @@ table a {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
+  .xl\:hover\:text-darksparent:hover {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .xl\:hover\:text-blue-light:hover {
     --tw-text-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-text-opacity));
@@ -94170,6 +94921,10 @@ table a {
   .xl\:focus\:text-white:focus {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
+  }
+
+  .xl\:focus\:text-darksparent:focus {
+    color: rgba(0,0,0, 0.5);
   }
 
   .xl\:focus\:text-blue-light:focus {
@@ -100091,6 +100846,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-divide-opacity));
   }
 
+  .\32xl\:divide-darksparent > :not([hidden]) ~ :not([hidden]) {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .\32xl\:divide-blue-light > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-divide-opacity));
@@ -100383,6 +101142,10 @@ table a {
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   }
 
+  .\32xl\:bg-darksparent {
+    background-color: rgba(0,0,0, 0.5);
+  }
+
   .\32xl\:bg-blue-light {
     --tw-bg-opacity: 1;
     background-color: rgba(43, 73, 101, var(--tw-bg-opacity));
@@ -100489,6 +101252,10 @@ table a {
   .group:hover .\32xl\:group-hover\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .group:hover .\32xl\:group-hover\:bg-darksparent {
+    background-color: rgba(0,0,0, 0.5);
   }
 
   .group:hover .\32xl\:group-hover\:bg-blue-light {
@@ -100599,6 +101366,10 @@ table a {
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   }
 
+  .\32xl\:focus-within\:bg-darksparent:focus-within {
+    background-color: rgba(0,0,0, 0.5);
+  }
+
   .\32xl\:focus-within\:bg-blue-light:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(43, 73, 101, var(--tw-bg-opacity));
@@ -100707,6 +101478,10 @@ table a {
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   }
 
+  .\32xl\:hover\:bg-darksparent:hover {
+    background-color: rgba(0,0,0, 0.5);
+  }
+
   .\32xl\:hover\:bg-blue-light:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(43, 73, 101, var(--tw-bg-opacity));
@@ -100813,6 +101588,10 @@ table a {
   .\32xl\:focus\:bg-white:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:focus\:bg-darksparent:focus {
+    background-color: rgba(0,0,0, 0.5);
   }
 
   .\32xl\:focus\:bg-blue-light:focus {
@@ -100961,6 +101740,11 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .\32xl\:from-darksparent {
+    --tw-gradient-from: rgba(0,0,0, 0.5);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .\32xl\:from-blue-light {
     --tw-gradient-from: #2B4965;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(43, 73, 101, 0));
@@ -101057,6 +101841,10 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .\32xl\:via-darksparent {
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0,0,0, 0.5), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .\32xl\:via-blue-light {
     --tw-gradient-stops: var(--tw-gradient-from), #2B4965, var(--tw-gradient-to, rgba(43, 73, 101, 0));
   }
@@ -101143,6 +101931,10 @@ table a {
 
   .\32xl\:to-white {
     --tw-gradient-to: #fff;
+  }
+
+  .\32xl\:to-darksparent {
+    --tw-gradient-to: rgba(0,0,0, 0.5);
   }
 
   .\32xl\:to-blue-light {
@@ -101247,6 +102039,11 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .\32xl\:hover\:from-darksparent:hover {
+    --tw-gradient-from: rgba(0,0,0, 0.5);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .\32xl\:hover\:from-blue-light:hover {
     --tw-gradient-from: #2B4965;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(43, 73, 101, 0));
@@ -101343,6 +102140,10 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .\32xl\:hover\:via-darksparent:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0,0,0, 0.5), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .\32xl\:hover\:via-blue-light:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #2B4965, var(--tw-gradient-to, rgba(43, 73, 101, 0));
   }
@@ -101429,6 +102230,10 @@ table a {
 
   .\32xl\:hover\:to-white:hover {
     --tw-gradient-to: #fff;
+  }
+
+  .\32xl\:hover\:to-darksparent:hover {
+    --tw-gradient-to: rgba(0,0,0, 0.5);
   }
 
   .\32xl\:hover\:to-blue-light:hover {
@@ -101533,6 +102338,11 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .\32xl\:focus\:from-darksparent:focus {
+    --tw-gradient-from: rgba(0,0,0, 0.5);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .\32xl\:focus\:from-blue-light:focus {
     --tw-gradient-from: #2B4965;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(43, 73, 101, 0));
@@ -101629,6 +102439,10 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .\32xl\:focus\:via-darksparent:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0,0,0, 0.5), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .\32xl\:focus\:via-blue-light:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #2B4965, var(--tw-gradient-to, rgba(43, 73, 101, 0));
   }
@@ -101715,6 +102529,10 @@ table a {
 
   .\32xl\:focus\:to-white:focus {
     --tw-gradient-to: #fff;
+  }
+
+  .\32xl\:focus\:to-darksparent:focus {
+    --tw-gradient-to: rgba(0,0,0, 0.5);
   }
 
   .\32xl\:focus\:to-blue-light:focus {
@@ -102197,6 +103015,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
   }
 
+  .\32xl\:border-darksparent {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .\32xl\:border-blue-light {
     --tw-border-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-border-opacity));
@@ -102303,6 +103125,10 @@ table a {
   .group:hover .\32xl\:group-hover\:border-white {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  }
+
+  .group:hover .\32xl\:group-hover\:border-darksparent {
+    border-color: rgba(0,0,0, 0.5);
   }
 
   .group:hover .\32xl\:group-hover\:border-blue-light {
@@ -102413,6 +103239,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
   }
 
+  .\32xl\:focus-within\:border-darksparent:focus-within {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .\32xl\:focus-within\:border-blue-light:focus-within {
     --tw-border-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-border-opacity));
@@ -102521,6 +103351,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
   }
 
+  .\32xl\:hover\:border-darksparent:hover {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .\32xl\:hover\:border-blue-light:hover {
     --tw-border-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-border-opacity));
@@ -102627,6 +103461,10 @@ table a {
   .\32xl\:focus\:border-white:focus {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  }
+
+  .\32xl\:focus\:border-darksparent:focus {
+    border-color: rgba(0,0,0, 0.5);
   }
 
   .\32xl\:focus\:border-blue-light:focus {
@@ -108464,6 +109302,18 @@ table a {
     color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
   }
 
+  .\32xl\:placeholder-darksparent::-moz-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .\32xl\:placeholder-darksparent:-ms-input-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .\32xl\:placeholder-darksparent::placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .\32xl\:placeholder-blue-light::-moz-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-placeholder-opacity));
@@ -108786,6 +109636,18 @@ table a {
   .\32xl\:focus\:placeholder-white:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:focus\:placeholder-darksparent:focus::-moz-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .\32xl\:focus\:placeholder-darksparent:focus:-ms-input-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .\32xl\:focus\:placeholder-darksparent:focus::placeholder {
+    color: rgba(0,0,0, 0.5);
   }
 
   .\32xl\:focus\:placeholder-blue-light:focus::-moz-placeholder {
@@ -112493,6 +113355,10 @@ table a {
     --tw-ring-offset-color: #fff;
   }
 
+  .\32xl\:ring-offset-darksparent {
+    --tw-ring-offset-color: rgba(0,0,0, 0.5);
+  }
+
   .\32xl\:ring-offset-blue-light {
     --tw-ring-offset-color: #2B4965;
   }
@@ -112581,6 +113447,10 @@ table a {
     --tw-ring-offset-color: #fff;
   }
 
+  .\32xl\:focus-within\:ring-offset-darksparent:focus-within {
+    --tw-ring-offset-color: rgba(0,0,0, 0.5);
+  }
+
   .\32xl\:focus-within\:ring-offset-blue-light:focus-within {
     --tw-ring-offset-color: #2B4965;
   }
@@ -112667,6 +113537,10 @@ table a {
 
   .\32xl\:focus\:ring-offset-white:focus {
     --tw-ring-offset-color: #fff;
+  }
+
+  .\32xl\:focus\:ring-offset-darksparent:focus {
+    --tw-ring-offset-color: rgba(0,0,0, 0.5);
   }
 
   .\32xl\:focus\:ring-offset-blue-light:focus {
@@ -112829,6 +113703,10 @@ table a {
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
   }
 
+  .\32xl\:ring-darksparent {
+    --tw-ring-color: rgba(0,0,0, 0.5);
+  }
+
   .\32xl\:ring-blue-light {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(43, 73, 101, var(--tw-ring-opacity));
@@ -112937,6 +113815,10 @@ table a {
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
   }
 
+  .\32xl\:focus-within\:ring-darksparent:focus-within {
+    --tw-ring-color: rgba(0,0,0, 0.5);
+  }
+
   .\32xl\:focus-within\:ring-blue-light:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(43, 73, 101, var(--tw-ring-opacity));
@@ -113043,6 +113925,10 @@ table a {
   .\32xl\:focus\:ring-white:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
+  }
+
+  .\32xl\:focus\:ring-darksparent:focus {
+    --tw-ring-color: rgba(0,0,0, 0.5);
   }
 
   .\32xl\:focus\:ring-blue-light:focus {
@@ -113377,6 +114263,10 @@ table a {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
+  .\32xl\:text-darksparent {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .\32xl\:text-blue-light {
     --tw-text-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-text-opacity));
@@ -113483,6 +114373,10 @@ table a {
   .group:hover .\32xl\:group-hover\:text-white {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
+  }
+
+  .group:hover .\32xl\:group-hover\:text-darksparent {
+    color: rgba(0,0,0, 0.5);
   }
 
   .group:hover .\32xl\:group-hover\:text-blue-light {
@@ -113593,6 +114487,10 @@ table a {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
+  .\32xl\:focus-within\:text-darksparent:focus-within {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .\32xl\:focus-within\:text-blue-light:focus-within {
     --tw-text-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-text-opacity));
@@ -113701,6 +114599,10 @@ table a {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
+  .\32xl\:hover\:text-darksparent:hover {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .\32xl\:hover\:text-blue-light:hover {
     --tw-text-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-text-opacity));
@@ -113807,6 +114709,10 @@ table a {
   .\32xl\:focus\:text-white:focus {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
+  }
+
+  .\32xl\:focus\:text-darksparent:focus {
+    color: rgba(0,0,0, 0.5);
   }
 
   .\32xl\:focus\:text-blue-light:focus {
@@ -119728,6 +120634,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-divide-opacity));
   }
 
+  .\33xl\:divide-darksparent > :not([hidden]) ~ :not([hidden]) {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .\33xl\:divide-blue-light > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-divide-opacity));
@@ -120020,6 +120930,10 @@ table a {
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   }
 
+  .\33xl\:bg-darksparent {
+    background-color: rgba(0,0,0, 0.5);
+  }
+
   .\33xl\:bg-blue-light {
     --tw-bg-opacity: 1;
     background-color: rgba(43, 73, 101, var(--tw-bg-opacity));
@@ -120126,6 +121040,10 @@ table a {
   .group:hover .\33xl\:group-hover\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .group:hover .\33xl\:group-hover\:bg-darksparent {
+    background-color: rgba(0,0,0, 0.5);
   }
 
   .group:hover .\33xl\:group-hover\:bg-blue-light {
@@ -120236,6 +121154,10 @@ table a {
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   }
 
+  .\33xl\:focus-within\:bg-darksparent:focus-within {
+    background-color: rgba(0,0,0, 0.5);
+  }
+
   .\33xl\:focus-within\:bg-blue-light:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(43, 73, 101, var(--tw-bg-opacity));
@@ -120344,6 +121266,10 @@ table a {
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   }
 
+  .\33xl\:hover\:bg-darksparent:hover {
+    background-color: rgba(0,0,0, 0.5);
+  }
+
   .\33xl\:hover\:bg-blue-light:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(43, 73, 101, var(--tw-bg-opacity));
@@ -120450,6 +121376,10 @@ table a {
   .\33xl\:focus\:bg-white:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .\33xl\:focus\:bg-darksparent:focus {
+    background-color: rgba(0,0,0, 0.5);
   }
 
   .\33xl\:focus\:bg-blue-light:focus {
@@ -120598,6 +121528,11 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .\33xl\:from-darksparent {
+    --tw-gradient-from: rgba(0,0,0, 0.5);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .\33xl\:from-blue-light {
     --tw-gradient-from: #2B4965;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(43, 73, 101, 0));
@@ -120694,6 +121629,10 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .\33xl\:via-darksparent {
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0,0,0, 0.5), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .\33xl\:via-blue-light {
     --tw-gradient-stops: var(--tw-gradient-from), #2B4965, var(--tw-gradient-to, rgba(43, 73, 101, 0));
   }
@@ -120780,6 +121719,10 @@ table a {
 
   .\33xl\:to-white {
     --tw-gradient-to: #fff;
+  }
+
+  .\33xl\:to-darksparent {
+    --tw-gradient-to: rgba(0,0,0, 0.5);
   }
 
   .\33xl\:to-blue-light {
@@ -120884,6 +121827,11 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .\33xl\:hover\:from-darksparent:hover {
+    --tw-gradient-from: rgba(0,0,0, 0.5);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .\33xl\:hover\:from-blue-light:hover {
     --tw-gradient-from: #2B4965;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(43, 73, 101, 0));
@@ -120980,6 +121928,10 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .\33xl\:hover\:via-darksparent:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0,0,0, 0.5), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .\33xl\:hover\:via-blue-light:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #2B4965, var(--tw-gradient-to, rgba(43, 73, 101, 0));
   }
@@ -121066,6 +122018,10 @@ table a {
 
   .\33xl\:hover\:to-white:hover {
     --tw-gradient-to: #fff;
+  }
+
+  .\33xl\:hover\:to-darksparent:hover {
+    --tw-gradient-to: rgba(0,0,0, 0.5);
   }
 
   .\33xl\:hover\:to-blue-light:hover {
@@ -121170,6 +122126,11 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .\33xl\:focus\:from-darksparent:focus {
+    --tw-gradient-from: rgba(0,0,0, 0.5);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .\33xl\:focus\:from-blue-light:focus {
     --tw-gradient-from: #2B4965;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(43, 73, 101, 0));
@@ -121266,6 +122227,10 @@ table a {
     --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .\33xl\:focus\:via-darksparent:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0,0,0, 0.5), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+
   .\33xl\:focus\:via-blue-light:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #2B4965, var(--tw-gradient-to, rgba(43, 73, 101, 0));
   }
@@ -121352,6 +122317,10 @@ table a {
 
   .\33xl\:focus\:to-white:focus {
     --tw-gradient-to: #fff;
+  }
+
+  .\33xl\:focus\:to-darksparent:focus {
+    --tw-gradient-to: rgba(0,0,0, 0.5);
   }
 
   .\33xl\:focus\:to-blue-light:focus {
@@ -121834,6 +122803,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
   }
 
+  .\33xl\:border-darksparent {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .\33xl\:border-blue-light {
     --tw-border-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-border-opacity));
@@ -121940,6 +122913,10 @@ table a {
   .group:hover .\33xl\:group-hover\:border-white {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  }
+
+  .group:hover .\33xl\:group-hover\:border-darksparent {
+    border-color: rgba(0,0,0, 0.5);
   }
 
   .group:hover .\33xl\:group-hover\:border-blue-light {
@@ -122050,6 +123027,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
   }
 
+  .\33xl\:focus-within\:border-darksparent:focus-within {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .\33xl\:focus-within\:border-blue-light:focus-within {
     --tw-border-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-border-opacity));
@@ -122158,6 +123139,10 @@ table a {
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
   }
 
+  .\33xl\:hover\:border-darksparent:hover {
+    border-color: rgba(0,0,0, 0.5);
+  }
+
   .\33xl\:hover\:border-blue-light:hover {
     --tw-border-opacity: 1;
     border-color: rgba(43, 73, 101, var(--tw-border-opacity));
@@ -122264,6 +123249,10 @@ table a {
   .\33xl\:focus\:border-white:focus {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  }
+
+  .\33xl\:focus\:border-darksparent:focus {
+    border-color: rgba(0,0,0, 0.5);
   }
 
   .\33xl\:focus\:border-blue-light:focus {
@@ -128101,6 +129090,18 @@ table a {
     color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
   }
 
+  .\33xl\:placeholder-darksparent::-moz-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .\33xl\:placeholder-darksparent:-ms-input-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .\33xl\:placeholder-darksparent::placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .\33xl\:placeholder-blue-light::-moz-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-placeholder-opacity));
@@ -128423,6 +129424,18 @@ table a {
   .\33xl\:focus\:placeholder-white:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
+  }
+
+  .\33xl\:focus\:placeholder-darksparent:focus::-moz-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .\33xl\:focus\:placeholder-darksparent:focus:-ms-input-placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  .\33xl\:focus\:placeholder-darksparent:focus::placeholder {
+    color: rgba(0,0,0, 0.5);
   }
 
   .\33xl\:focus\:placeholder-blue-light:focus::-moz-placeholder {
@@ -132130,6 +133143,10 @@ table a {
     --tw-ring-offset-color: #fff;
   }
 
+  .\33xl\:ring-offset-darksparent {
+    --tw-ring-offset-color: rgba(0,0,0, 0.5);
+  }
+
   .\33xl\:ring-offset-blue-light {
     --tw-ring-offset-color: #2B4965;
   }
@@ -132218,6 +133235,10 @@ table a {
     --tw-ring-offset-color: #fff;
   }
 
+  .\33xl\:focus-within\:ring-offset-darksparent:focus-within {
+    --tw-ring-offset-color: rgba(0,0,0, 0.5);
+  }
+
   .\33xl\:focus-within\:ring-offset-blue-light:focus-within {
     --tw-ring-offset-color: #2B4965;
   }
@@ -132304,6 +133325,10 @@ table a {
 
   .\33xl\:focus\:ring-offset-white:focus {
     --tw-ring-offset-color: #fff;
+  }
+
+  .\33xl\:focus\:ring-offset-darksparent:focus {
+    --tw-ring-offset-color: rgba(0,0,0, 0.5);
   }
 
   .\33xl\:focus\:ring-offset-blue-light:focus {
@@ -132466,6 +133491,10 @@ table a {
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
   }
 
+  .\33xl\:ring-darksparent {
+    --tw-ring-color: rgba(0,0,0, 0.5);
+  }
+
   .\33xl\:ring-blue-light {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(43, 73, 101, var(--tw-ring-opacity));
@@ -132574,6 +133603,10 @@ table a {
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
   }
 
+  .\33xl\:focus-within\:ring-darksparent:focus-within {
+    --tw-ring-color: rgba(0,0,0, 0.5);
+  }
+
   .\33xl\:focus-within\:ring-blue-light:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(43, 73, 101, var(--tw-ring-opacity));
@@ -132680,6 +133713,10 @@ table a {
   .\33xl\:focus\:ring-white:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
+  }
+
+  .\33xl\:focus\:ring-darksparent:focus {
+    --tw-ring-color: rgba(0,0,0, 0.5);
   }
 
   .\33xl\:focus\:ring-blue-light:focus {
@@ -133014,6 +134051,10 @@ table a {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
+  .\33xl\:text-darksparent {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .\33xl\:text-blue-light {
     --tw-text-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-text-opacity));
@@ -133120,6 +134161,10 @@ table a {
   .group:hover .\33xl\:group-hover\:text-white {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
+  }
+
+  .group:hover .\33xl\:group-hover\:text-darksparent {
+    color: rgba(0,0,0, 0.5);
   }
 
   .group:hover .\33xl\:group-hover\:text-blue-light {
@@ -133230,6 +134275,10 @@ table a {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
+  .\33xl\:focus-within\:text-darksparent:focus-within {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .\33xl\:focus-within\:text-blue-light:focus-within {
     --tw-text-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-text-opacity));
@@ -133338,6 +134387,10 @@ table a {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
+  .\33xl\:hover\:text-darksparent:hover {
+    color: rgba(0,0,0, 0.5);
+  }
+
   .\33xl\:hover\:text-blue-light:hover {
     --tw-text-opacity: 1;
     color: rgba(43, 73, 101, var(--tw-text-opacity));
@@ -133444,6 +134497,10 @@ table a {
   .\33xl\:focus\:text-white:focus {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
+  }
+
+  .\33xl\:focus\:text-darksparent:focus {
+    color: rgba(0,0,0, 0.5);
   }
 
   .\33xl\:focus\:text-blue-light:focus {

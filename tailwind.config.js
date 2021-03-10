@@ -23,6 +23,9 @@ module.exports = {
       gray: colors.coolGray,
       black: colors.black,
       white: colors.white,
+      darksparent: {
+        DEFAULT: 'rgba(0,0,0, 0.5)',
+      },
       blue: {
         light: '#2B4965',
         vivid: '#015098',
