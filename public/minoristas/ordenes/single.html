@@ -153,7 +153,7 @@
                                     </p>
                                 </div>
 
-                                <a href="#" class="btn sucess small block">Enviar Mensaje</a>
+                                <a href="#" class="btn sucess small block" id="buttonOpenChat">Enviar Mensaje</a>
                             </div>
                         </div>
 
@@ -277,11 +277,11 @@
     <div class="page-modal absolute inset-0	w-screen h-screen bg-darksparent invisible z-20 transition-all" id="pageModal">
         
         <!-- Modal Editar -->
-        <div class="bg-white absolute top-0 bottom-0 right-0 w-1/5 box-border pt-9 px-7 pb-28 invisible" id="modal">
+        <div class="bg-white absolute top-0 bottom-0 right-0 w-1/5 box-border pt-9 px-7 pb-28 invisible" id="modalEditar">
             
             <div class="header flex items-center justify-between mb-5">
                 <h3 class="font-semibold text-lg ">Datos de Despacho</h3>
-                <p class="button-close text-lg cursor-pointer " id="closeModal">✕</p>
+                <p class="button-close text-lg cursor-pointer " id="closeModalEditar">✕</p>
             </div>
 
             <div class="body">
@@ -334,6 +334,35 @@
                 <div class="mb-4">
                     <p class="text-sm font-semibold mb-2 text-gray-400">Correo</p>
                     <input type="text" class="border w-full py-1.5 px-2.5 rounded text-sm" placeholder="Ej: cristianzapata334@gmail.com">
+                </div>
+
+                <div class="fixed bottom-0 w-1/6 pr-1 pb-5 bg-white flex">
+                    <a href="#" class="btn sucess small mb-1 flex-1">
+                        Guardar
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        
+        <!-- Modal Mensaje -->
+        <div class="bg-white absolute top-0 bottom-0 right-0 w-1/5 box-border pt-9 px-7 pb-28 invisible" id="modalChat">
+            
+            <div class="header flex items-center justify-between mb-5">
+                <h3 class="font-semibold text-lg ">Mensaje</h3>
+                <p class="button-close text-lg cursor-pointer " id="closeModalChat">✕</p>
+            </div>
+
+            <div class="body">
+
+                <div class="chat-info">
+                    <p>Orden Nº23123</p>
+                    <span>Nombre del Mayorista</span>
+                </div>
+
+                <div class="messages">
+                    bubbles
                 </div>
 
                 <div class="fixed bottom-0 w-1/6 pr-1 pb-5 bg-white flex">
