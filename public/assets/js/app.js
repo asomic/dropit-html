@@ -1,4 +1,4 @@
-// (function () {
+(function () {
 
     window.onload = function(){
 
@@ -12,61 +12,45 @@
             }
         )
     
-        // Modal Editar
         let closeModalEditar = document.querySelector('#closeModalEditar');
         let closeModalChat = document.querySelector('#closeModalChat');
         let buttonEditOrder = document.querySelector('#buttonEditOrder');
         let buttonOpenChat = document.querySelector('#buttonOpenChat');
-    
-        // let editOrder = document.querySelector('#editOrder');
+        
         let pageModal = document.querySelector('#pageModal');
         let modalEditar = document.querySelector('#modalEditar');
         let modalChat = document.querySelector('#modalChat');
-    
-        closeModalEditar.onclick = () => {
-            pageModal.classList.add('invisible');
-            pageModal.classList.remove('visible');
-            modalChat.classList.toggle('invisible');
-        }
-    
-        closeModalChat.onclick = () => {
-            pageModal.classList.add('invisible');
-            modalEditar.classList.toggle('invisible');
-        }
-    
+        
+        // Modal Editar
         buttonEditOrder.onclick = () => {
-            pageModal.classList.toggle('invisible');
-            pageModal.classList.toggle('visible');
-            modalEditar.classList.toggle('invisible');
-            modalEditar.classList.toggle('visible');
+            pageModal.classList.remove('invisible');
+            pageModal.classList.add('visible');
+            modalEditar.classList.remove('invisible');
+            modalEditar.classList.add('visible');
+        }
+
+        closeModalEditar.onclick = () => {
+            pageModal.classList.remove('visible');
+            pageModal.classList.add('invisible');
+            modalEditar.classList.remove('visible');
+            modalEditar.classList.add('invisible');
         }
         
+        // Modal Chat
         buttonOpenChat.onclick = () => {
-            pageModal.classList.toggle('invisible');
-            pageModal.classList.toggle('visible');
-            modalChat.classList.toggle('invisible');
-            modalChat.classList.toggle('visible');
+            pageModal.classList.remove('invisible');
+            pageModal.classList.add('visible');
+            modalChat.classList.remove('invisible');
+            modalChat.classList.add('visible');
+        }
+
+        closeModalChat.onclick = () => {
+            pageModal.classList.remove('visible');
+            pageModal.classList.add('invisible');
+            modalChat.classList.remove('visible');
+            modalChat.classList.add('invisible');
         }
 
     };
 
-    // closeModalEditar.addEventListener('click', function(e) {
-    //     pageModal.classList.toggle('invisible');
-    //     modalEditar.classList.toggle('invisible');
-    // })
-
-    // buttonEditOrder.addEventListener('click', function(e) {
-    //     pageModal.classList.toggle('invisible');
-    //     pageModal.classList.toggle('visible');
-    //     modalEditar.classList.toggle('invisible');
-    //     modalEditar.classList.toggle('visible');
-    // })
-
-    // buttonOpenChat.addEventListener('click', function(e) {
-    //     pageModal.classList.toggle('invisible');
-    //     pageModal.classList.toggle('visible');
-    //     modalChat.classList.toggle('invisible');
-    //     modalChat.classList.toggle('visible');
-    // })
-
-// }());
+}());
