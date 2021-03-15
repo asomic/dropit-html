@@ -191,11 +191,57 @@
         
         <div class="modal-edit-client bg-white absolute top-0 bottom-0 right-0 w-1/5 box-border pt-9 px-7 pb-28 invisible" id="modalClient">
             <div class="header flex items-center justify-between mb-4">
-                <h3 class="font-semibold text-lg ">Mensaje</h3>
+                <h3 class="font-semibold text-lg ">Editar Cliente</h3>
                 <p class="button-close text-lg cursor-pointer " id="closeModalClient">✕</p>
             </div>
-            <div class="body"></div>
-            <div class="footer"></div>
+            <div class="body">
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">Nombre</p>
+                    <input type="text" class="border w-full py-1.5 px-2.5 rounded text-sm" placeholder="Ej: Rachell Soto">
+                </div>
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">Dirección</p>
+                    <input type="text" class="border w-full py-1.5 px-2.5 rounded text-sm" placeholder="Ej: La Plaza #333">
+                </div>
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">Ciudad</p>
+                    <input type="text" class="border w-full py-1.5 px-2.5 rounded text-sm" placeholder="Ej: Curicó">
+                </div>
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">Región</p>
+                    <select name="" id="" class="box-border text-sm border w-full py-1.5 px-2.5 rounded">
+                        <option value="">Arica y Parinacota</option>
+                        <option value="">Tarapacá</option>
+                        <option value="">Antofagasta</option>
+                        <option value="">Atacama</option>
+                        <option value="">Coquimbo</option>
+                        <option value="">Valparaíso</option>
+                        <option value="">Metropolitana de Santiago</option>
+                        <option value="">Libertador General Bernardo O’Higgins</option>
+                        <option value="">Maule</option>
+                        <option value="">Ñuble</option>
+                        <option value="">Biobío</option>
+                        <option value="">La Araucanía</option>
+                        <option value="">Los Ríos</option>
+                        <option value="">Los Lagos</option>
+                        <option value="">Aysén del General Carlos Ibáñez del Campo</option>
+                        <option value="">Magallanes y la Antártica Chilena</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">Teléfono</p>
+                    <input type="text" class="border w-full py-1.5 px-2.5 rounded text-sm" placeholder="Ej: 91234567">
+                </div>
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">Correo</p>
+                    <input type="text" class="border w-full py-1.5 px-2.5 rounded text-sm" placeholder="Ej: rachellsoto@gmail.com">
+                </div>
+            </div>
+            <div class="footer fixed bottom-0 w-1/6 pr-1 pb-5 bg-white">
+                <a href="#" class="btn sucess small block mb-1">
+                    Guardar
+                </a>
+            </div>
         </div>
 
     </div>
