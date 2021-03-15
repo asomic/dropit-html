@@ -10884,6 +10884,7 @@ video {
 }
 
 .sticky {
+  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -31003,6 +31004,7 @@ table a {
   }
 
   .sm\:sticky {
+    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -50791,6 +50793,7 @@ table a {
   }
 
   .md\:sticky {
+    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -70579,6 +70582,7 @@ table a {
   }
 
   .lg\:sticky {
+    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -90367,6 +90371,7 @@ table a {
   }
 
   .xl\:sticky {
+    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -110155,6 +110160,7 @@ table a {
   }
 
   .\32xl\:sticky {
+    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -129943,6 +129949,7 @@ table a {
   }
 
   .\33xl\:sticky {
+    position: -webkit-sticky;
     position: sticky;
   }
 

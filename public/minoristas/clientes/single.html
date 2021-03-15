@@ -107,7 +107,7 @@
             <div class="flex justify-between items-center mb-6 lg:mb-10">
                 <h1 class="font-semibold text-3xl">Clientes</h1>
                 <div class="buttons">
-                    <a href="#" class="btn sucess">Editar Cliente</a>
+                    <a href="#" class="btn sucess" id="buttonOpenEditClient">Editar Cliente</a>
                 </div>
             </div>
         </div>
@@ -186,6 +186,21 @@
         </div>
 
     </main>
+
+    <div class="page-modal absolute inset-0 w-screen h-screen bg-darksparent invisible z-20 transition-all" id="pageModal">
+        
+        <div class="modal-edit-client bg-white absolute top-0 bottom-0 right-0 w-1/5 box-border pt-9 px-7 pb-28 invisible" id="modalClient">
+            <div class="header flex items-center justify-between mb-4">
+                <h3 class="font-semibold text-lg ">Mensaje</h3>
+                <p class="button-close text-lg cursor-pointer " id="closeModalClient">✕</p>
+            </div>
+            <div class="body"></div>
+            <div class="footer"></div>
+        </div>
+
+    </div>
+
+    <script src="../../assets/js/app.js"></script>
 
 </body>
 </html>

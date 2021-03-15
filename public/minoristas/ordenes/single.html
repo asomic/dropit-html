@@ -347,36 +347,90 @@
         </div>
         
         <!-- Modal Mensaje -->
-        <div class="bg-white absolute top-0 bottom-0 right-0 w-1/5 box-border pt-9 px-7 pb-28 invisible" id="modalChat">
+        <div class="modal-chat bg-white absolute top-0 bottom-0 right-0 w-1/5 box-border pt-9 px-7 pb-9 invisible" id="modalChat">
             
             <div class="header flex items-center justify-between mb-4">
                 <h3 class="font-semibold text-lg ">Mensaje</h3>
                 <p class="button-close text-lg cursor-pointer " id="closeModalChat">✕</p>
             </div>
 
-            <div class="body">
+            <div class="body ">
 
-                <div class="chat-info bg-gray-100 text-xs border rounded py-3 px-4 mb-1">
+                <style>
+                    /* .modal-chat {} */
+                    .modal-chat .body {
+                        width: 100%;
+                        height: 95%;
+                        display: grid;
+                        grid-template-rows: 1fr 8fr 1fr;
+                    }
+                    .modal-chat .body .messages {
+                        display: grid;
+                        position: relative;
+                    }
+                    .modal-chat .body .messages .bubble {
+                        max-width: 90%;
+                        position: relative;
+                    }
+                    .modal-chat .body .messages .bubble::after {
+                        content: '';
+                        position: absolute;
+                        width: 10px;
+                        height: 10px;
+                        background-color: #D1D5DA;
+                        transform: rotate(-45deg);
+                        bottom: 8px;
+                        left: -5px;
+                    }
+                    .modal-chat .body .messages .bubble.us {
+                        justify-self: end;
+                    }
+                    .modal-chat .body .messages .bubble.us::after {
+                        left: auto;
+                        right: -5px;
+                    }
+                </style>
+
+                <div class="chat-info bg-gray-100 text-xs border rounded py-3 px-4 mb-2">
                     <p class="font-medium text-gray-500">Orden Nº23123</p>
                     <span>Nombre del Mayorista</span>
                 </div>
 
-                <div class="messages bg-gray-100 border rounded py-3 px-4">
-                    <div class="bubble bg-gray-300 rounded text-sm py-3 px-3 mt-2">
+                <div class="messages bg-gray-100 border rounded py-2 px-4 mb-2 overflow-y-auto">
+                    <div class="bubble bg-gray-300 rounded text-sm py-3 px-3 mb-2 us">
                         Versión y una en tras las gobierno no llevado
                     </div>
-                    <div class="bubble bg-gray-300 rounded text-sm py-3 px-3 mt-2">
+                    <div class="bubble bg-gray-300 rounded text-sm py-3 px-3 mb-2">
                         Vez prácticamente corporaciones al subvención. De empezar, versión y una en tras las
                     </div>
+                    <div class="bubble bg-gray-300 rounded text-sm py-3 px-3 mb-2">
+                        Versión y una en tras las gobierno no llevado
+                    </div>
+                    <div class="bubble bg-gray-300 rounded text-sm py-3 px-3 mb-2 us">
+                        Vez prácticamente corporaciones al subvención. De empezar, versión y una en tras las
+                    </div>
+                    <div class="bubble bg-gray-300 rounded text-sm py-3 px-3 mb-2">
+                        Versión y una en tras las gobierno no llevado
+                    </div>
+                    <div class="bubble bg-gray-300 rounded text-sm py-3 px-3 mb-2 us">
+                        Vez prácticamente corporaciones al subvención. De empezar, versión y una en tras las
+                    </div>
+                    <div class="w-full h-1"></div>
                 </div>
 
-                <div class="fixed bottom-0 w-1/6 pr-1 pb-5 bg-white flex">
+                <!-- <div class="fixed bottom-0 w-1/6 pr-1 pb-5 bg-white flex">
                     <a href="#" class="btn sucess small mb-1 flex-1">
                         Guardar
                     </a>
+                </div> -->
+
+                <div class="footer">
+                    <textarea id="" class="border rounded w-full py-3 px-4 text-sm" placeholder="Escribir Mensaje"></textarea>
+                    <a href="#" class="btn sucess block small">Enviar</a>
                 </div>
 
             </div>
+
 
         </div>
 
