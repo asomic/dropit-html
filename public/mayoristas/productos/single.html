@@ -126,7 +126,7 @@
                             o
                             &nbsp;&nbsp;&nbsp;
                         </span>
-                        <a href="#" class="btn small sucess">Crear nueva Categoría</a>
+                        <a href="#" class="btn small sucess" id="buttonAddNewCategory">Crear nueva Categoría</a>
                     </div>
                     <div class="grid grid-cols-2 gap-2.5 w-full">
                         <input class="border rounded py-2 px-4 text-sm" type="text" placeholder="Marca">
@@ -311,6 +311,32 @@
                 <div class="footer fixed bottom-0 w-1/6 pr-1 pb-5 bg-white">
                     <a href="#" class="btn sucess small block mb-1">
                         Guardar
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- Modal Editar Atributo-->
+        <div class="modal-order-edit bg-white absolute top-0 bottom-0 right-0 w-1/5 box-border pt-9 px-7 pb-9 invisible" id="modalAddCategory">
+            
+            <div class="header flex items-center justify-between mb-4">
+                <h3 class="font-semibold text-lg ">Crear categoría</h3>
+                <p class="button-close text-lg cursor-pointer " id="closeModalAddCategory">✕</p>
+            </div>
+
+            <div class="body">
+                
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">Nombre</p>
+                    <input type="text" class="border w-full py-1.5 px-2.5 rounded text-sm" placeholder="Ej: Abrigos">
+                </div>
+
+                <div class="footer fixed bottom-0 w-1/6 pr-1 pb-5 bg-white">
+                    <a href="#" class="btn sucess small block mb-1">
+                        Agregar Categoría
                     </a>
                 </div>
 

@@ -21,12 +21,14 @@
         let buttonOpenEditClient = document.querySelector('#buttonOpenEditClient');
         let buttonModalInfoOrder = document.querySelector('#buttonModalInfoOrder');
         let openModalEditAttribute = document.querySelectorAll('.openModalEditAttribute');
+        let buttonAddNewCategory = document.querySelector('#buttonAddNewCategory');
         
         let closeModalEditar = document.querySelector('#closeModalEditar');
         let closeModalChat = document.querySelector('#closeModalChat');
         let closeModalClient = document.querySelector('#closeModalClient');
         let closeModalProductDetail = document.querySelector('#closeModalProductDetail');
         let closeModalInfoOrder = document.querySelector('#closeModalInfoOrder');
+        let closeModalAddCategory = document.querySelector('#closeModalAddCategory');
         
         let pageModal = document.querySelector('#pageModal');
         let modalProductDetail = document.querySelector('#modalProductDetail');
@@ -36,6 +38,7 @@
         let modalClient = document.querySelector('#modalClient');
         let modalInfoOrder = document.querySelector('#modalInfoOrder');
         let modalEditAttribute = document.querySelector('#modalEditAttribute');
+        let modalAddCategory = document.querySelector('#modalAddCategory');
         
         // Order Modals
         let buttonAddCart = document.querySelectorAll('.buttonAddCart');
@@ -191,6 +194,26 @@
                 pageModal.classList.add('invisible');
                 modalEditAttribute.classList.remove('visible');
                 modalEditAttribute.classList.add('invisible');
+            }
+
+        }
+
+        if (modalAddCategory) {
+
+            buttonAddNewCategory.onclick = () => {
+                body.style.overflow = 'hidden';
+                pageModal.classList.remove('invisible');
+                pageModal.classList.add('visible');
+                modalAddCategory.classList.remove('invisible');
+                modalAddCategory.classList.add('visible');
+            }
+
+            closeModalAddCategory.onclick = () => {
+                body.style.overflow = 'auto';
+                pageModal.classList.remove('visible');
+                pageModal.classList.add('invisible');
+                modalAddCategory.classList.remove('visible');
+                modalAddCategory.classList.add('invisible');
             }
 
         }
