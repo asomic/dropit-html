@@ -18,7 +18,7 @@
 
         <div class="flex justify-between items-center mb-10 lg:mb-0">
             <!-- Brand logo -->
-            <a href="/public/mayoristas/" class="brand block w-full lg:mb-10 ">
+            <a href="/public/mayoristas/home.html" class="brand block w-full lg:mb-10 ">
                 <img src="../../assets/img/logo.svg" alt="Ir al inicio" class="lg:pl-5 2xl:pl-6">
             </a>
 
@@ -31,7 +31,7 @@
 
         <!-- Menu -->
         <div class="menu w-full mb-9 lg:mb-0">
-            <a href="/public/mayoristas" class="header-item">
+            <a href="/public/mayoristas/home.html" class="header-item">
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-3.5">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4087 5.6L8 1.39907L3.59131 5.6H3.5923V12.6H12.4077V5.6H12.4087ZM13.877 6.99908V12.6C13.877 13.3732 13.2192 14 12.4077 14H3.5923C2.78086 14 2.12306 13.3732 2.12306 12.6V6.99906L1.03816 8.03283L0 7.04359L6.96197 0.409703C7.53526 -0.136568 8.46474 -0.136568 9.03803 0.409703L16 7.04359L14.9618 8.03283L13.877 6.99908Z" fill="white"/>
                 </svg>
@@ -142,7 +142,7 @@
                 <div class="section-header flex justify-between items-center mb-4">
                     <h3 class="text-xl font-semibold mb-3">Atributos</h3>
                     <div class="buttons">
-                        <a href="#" class="btn sucess">Agregar Atributo</a>
+                        <a href="#" class="btn sucess openModalEditAttribute">Agregar Atributo</a>
                     </div>
                 </div>
 
@@ -220,7 +220,7 @@
                                 <td class="py-4 px-5">0,5 Kg</td>
                                 <td class="py-4 px-5">$00.000</td>
                                 <td class="py-4 px-5">
-                                    <a href="#" class="btn small sucess">Editar</a>
+                                    <a href="#" class="btn small sucess openModalEditAttribute">Editar</a>
                                     <a href="#" class="btn small error">Borrar</a>
                                 </td>
                             </tr>
@@ -235,7 +235,7 @@
                                 <td class="py-4 px-5">0,5 Kg</td>
                                 <td class="py-4 px-5">$00.000</td>
                                 <td class="py-4 px-5">
-                                    <a href="#" class="btn small sucess">Editar</a>
+                                    <a href="#" class="btn small sucess openModalEditAttribute">Editar</a>
                                     <a href="#" class="btn small error">Borrar</a>
                                 </td>
                             </tr>
@@ -248,6 +248,80 @@
         </div>
 
     </main>
+
+    <!-- modal container -->
+    <div class="page-modal absolute inset-0	w-screen h-screen bg-darksparent invisible z-20 transition-all" id="pageModal">
+
+        <!-- Modal Editar Atributo-->
+        <div class="modal-order-edit bg-white absolute top-0 bottom-0 right-0 w-1/5 box-border pt-9 px-7 pb-9 invisible" id="modalEditAttribute">
+            
+            <div class="header flex items-center justify-between mb-4">
+                <h3 class="font-semibold text-lg ">Editar Atributo</h3>
+                <p class="button-close text-lg cursor-pointer " id="closeModalInfoOrder">✕</p>
+            </div>
+
+            <div class="body">
+
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">Talla</p>
+                    <select name="" id="" class="box-border text-sm border w-full py-1.5 px-2.5 rounded">
+                        <option value="">S</option>
+                        <option value="">M</option>
+                        <option value="">L</option>
+                    </select>
+                </div>
+
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">Color</p>
+                    <select name="" id="" class="box-border text-sm border w-full py-1.5 px-2.5 rounded">
+                        <option value="">Rojo</option>
+                        <option value="">Azul</option>
+                        <option value="">Verde</option>
+                    </select>
+                </div>
+                
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">SKU</p>
+                    <input type="text" class="border w-full py-1.5 px-2.5 rounded text-sm" placeholder="Ej: 59823458293485">
+                </div>
+                
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">Stock</p>
+                    <input type="text" class="border w-full py-1.5 px-2.5 rounded text-sm" placeholder="Ej: 50">
+                </div>
+                
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">Volumen</p>
+                    <input type="text" class="border w-full py-1.5 px-2.5 rounded text-sm" placeholder="Ej: 120">
+                </div>
+                
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">Peso</p>
+                    <input type="text" class="border w-full py-1.5 px-2.5 rounded text-sm" placeholder="Ej: 1kg">
+                </div>
+                
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400">Imagen</p>
+                    <div class="img border rounded text-center py-16">
+                        <img src="/public/assets/img/icons/upload.svg" class="m-auto mb-3 w-16" alt="Upload">
+                        <p class="text-sm">Agregar imagen destacada</p>
+                    </div>
+                </div>
+
+                <div class="footer fixed bottom-0 w-1/6 pr-1 pb-5 bg-white">
+                    <a href="#" class="btn sucess small block mb-1">
+                        Guardar
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="/public/assets/js/app.js"></script>
 
 </body>
 </html>

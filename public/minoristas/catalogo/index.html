@@ -18,7 +18,7 @@
 
         <div class="flex justify-between items-center mb-10 lg:mb-0">
             <!-- Brand logo -->
-            <a href="/public/minoristas/" class="brand block w-full lg:mb-10 ">
+            <a href="/public/minoristas/home.html" class="brand block w-full lg:mb-10 ">
                 <img src="../../assets/img/logo.svg" alt="Ir al inicio" class="lg:pl-5 2xl:pl-6">
             </a>
 
@@ -31,7 +31,7 @@
 
         <!-- Menu -->
         <div class="menu w-full mb-9 lg:mb-0">
-            <a href="/public/minoristas" class="header-item">
+            <a href="/public/minoristas/home.html" class="header-item">
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-3.5">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4087 5.6L8 1.39907L3.59131 5.6H3.5923V12.6H12.4077V5.6H12.4087ZM13.877 6.99908V12.6C13.877 13.3732 13.2192 14 12.4077 14H3.5923C2.78086 14 2.12306 13.3732 2.12306 12.6V6.99906L1.03816 8.03283L0 7.04359L6.96197 0.409703C7.53526 -0.136568 8.46474 -0.136568 9.03803 0.409703L16 7.04359L14.9618 8.03283L13.877 6.99908Z" fill="white"/>
                 </svg>
@@ -151,7 +151,7 @@
                 <div class="card border rounded bg-gray-50">
                     <div class="img w-full h-48 bg-gray-300"></div>
                     <div class="data py-4 px-5">
-                        <h3 class="text-md font-bold mb-0.5 leading-5">Nombre del Producto</h3>
+                        <h3 class="text-md font-bold mb-0.5 leading-5 cursor-pointer openDetailProd">Nombre del Producto</h3>
                         <p class="text-sm m-0 mb-3 text-gray-500">Categoría</p>
 
                         <p class="text-sm mb-3">$8.990 — $12.990</p>
@@ -164,7 +164,7 @@
                 <div class="card border rounded bg-gray-50">
                     <div class="img w-full h-48 bg-gray-300"></div>
                     <div class="data py-4 px-5">
-                        <h3 class="text-md font-bold mb-0.5 leading-5">Nombre del Producto</h3>
+                        <h3 class="text-md font-bold mb-0.5 leading-5 cursor-pointer openDetailProd">Nombre del Producto</h3>
                         <p class="text-sm m-0 mb-3 text-gray-500">Categoría</p>
 
                         <p class="text-sm mb-3">$8.990 — $12.990</p>
@@ -177,7 +177,7 @@
                 <div class="card border rounded bg-gray-50">
                     <div class="img w-full h-48 bg-gray-300"></div>
                     <div class="data py-4 px-5">
-                        <h3 class="text-md font-bold mb-0.5 leading-5">Nombre del Producto</h3>
+                        <h3 class="text-md font-bold mb-0.5 leading-5 cursor-pointer openDetailProd">Nombre del Producto</h3>
                         <p class="text-sm m-0 mb-3 text-gray-500">Categoría</p>
 
                         <p class="text-sm mb-3">$8.990 — $12.990</p>
@@ -190,7 +190,7 @@
                 <div class="card border rounded bg-gray-50">
                     <div class="img w-full h-48 bg-gray-300"></div>
                     <div class="data py-4 px-5">
-                        <h3 class="text-md font-bold mb-0.5 leading-5">Nombre del Producto</h3>
+                        <h3 class="text-md font-bold mb-0.5 leading-5 cursor-pointer openDetailProd">Nombre del Producto</h3>
                         <p class="text-sm m-0 mb-3 text-gray-500">Categoría</p>
 
                         <p class="text-sm mb-3">$8.990 — $12.990</p>
@@ -203,7 +203,7 @@
                 <div class="card border rounded bg-gray-50">
                     <div class="img w-full h-48 bg-gray-300"></div>
                     <div class="data py-4 px-5">
-                        <h3 class="text-md font-bold mb-0.5 leading-5">Nombre del Producto</h3>
+                        <h3 class="text-md font-bold mb-0.5 leading-5 cursor-pointer openDetailProd">Nombre del Producto</h3>
                         <p class="text-sm m-0 mb-3 text-gray-500">Categoría</p>
 
                         <p class="text-sm mb-3">$8.990 — $12.990</p>
@@ -216,7 +216,7 @@
                 <div class="card border rounded bg-gray-50">
                     <div class="img w-full h-48 bg-gray-300"></div>
                     <div class="data py-4 px-5">
-                        <h3 class="text-md font-bold mb-0.5 leading-5">Nombre del Producto</h3>
+                        <h3 class="text-md font-bold mb-0.5 leading-5 cursor-pointer openDetailProd">Nombre del Producto</h3>
                         <p class="text-sm m-0 mb-3 text-gray-500">Categoría</p>
 
                         <p class="text-sm mb-3">$8.990 — $12.990</p>
@@ -229,7 +229,7 @@
                 <div class="card border rounded bg-gray-50">
                     <div class="img w-full h-48 bg-gray-300"></div>
                     <div class="data py-4 px-5">
-                        <h3 class="text-md font-bold mb-0.5 leading-5">Nombre del Producto</h3>
+                        <h3 class="text-md font-bold mb-0.5 leading-5 cursor-pointer openDetailProd">Nombre del Producto</h3>
                         <p class="text-sm m-0 mb-3 text-gray-500">Categoría</p>
 
                         <p class="text-sm mb-3">$8.990 — $12.990</p>
@@ -244,6 +244,56 @@
         </div>
 
     </main>
+
+    <div class="page-modal absolute inset-0 w-screen h-screen bg-darksparent invisible z-20 transition-all" id="pageModal">
+        <div class="modal-product-detail bg-white absolute top-0 bottom-0 right-0 w-1/5 box-border pt-9 px-7 pb-28 invisible" id="modalProductDetail">
+            
+            <div class="header flex items-center justify-between mb-5">
+                <h3 class="font-semibold text-xl ">Detalle Producto</h3>
+                <p class="button-close text-lg cursor-pointer " id="closeModalProductDetail">✕</p>
+            </div>
+            <div class="img w-full h-44 bg-gray-300 rounded mb-5"></div>
+            <div class="data">
+                <h4 class="font-semibold text-md -mb-1">Nombre del Producto</h4>
+                <p class="text-sm text-gray-500 mb-3">
+                    Categoría
+                </p>
+
+                <p class="text-sm leading-tight text-gray-800 mb-4">
+                    Dice, desarrolla la foto que euro dicho prioridades la habido había hasta versión y cuales el poco como y que verdad está se a vez de constitucional. Mito el del ni les pasado, con concejal, gama el los entiendo mito jornada la bueno, plantea de estaríamos caballos los en empresa.
+                </p>
+
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400 leading-4">Tamaños</p>
+                    <p class="text-sm font-medium">
+                        S, M, L
+                    </p>
+                </div>
+
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400 leading-4">Colores</p>
+                    <p class="text-sm font-medium">
+                        Rojo, Verde
+                    </p>
+                </div>
+
+                <div class="mb-4">
+                    <p class="text-sm font-semibold mb-2 text-gray-400 leading-4">Valor</p>
+                    <p class="text-sm">
+                        $0.000 — $00.000
+                    </p>
+                </div>
+            </div>
+
+            <div class="fixed bottom-0 w-1/6 pr-1 pb-5 bg-white">
+                <a href="#" class="btn error small block mb-1">
+                    Quitar de Mi Catálogo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/app.js"></script>
 
 </body>
 </html>
