@@ -142,7 +142,7 @@
                 <div class="section-header flex justify-between items-center mb-4">
                     <h3 class="text-xl font-semibold mb-3">Atributos</h3>
                     <div class="buttons">
-                        <a href="#" class="btn sucess openModalEditAttribute">Agregar Atributo</a>
+                        <a href="#" class="btn sucess" id="openModalAddAttribute">Agregar Atributo</a>
                     </div>
                 </div>
 
@@ -319,7 +319,7 @@
 
         </div>
 
-        <!-- Modal Editar Atributo-->
+        <!-- Modal Agregar Categoría-->
         <div class="modal-order-edit bg-white absolute top-0 bottom-0 right-0 w-1/5 box-border pt-9 px-7 pb-9 invisible" id="modalAddCategory">
             
             <div class="header flex items-center justify-between mb-4">
@@ -342,6 +342,105 @@
 
             </div>
 
+        </div>
+
+        <!-- Modal Agregar Categoría-->
+        <div class="modal-order-edit bg-white absolute top-0 bottom-0 right-0 w-1/5 box-border pt-9 px-7 pb-9 invisible" id="modalAddAttribute">
+            
+            <div class="header flex items-center justify-between mb-4">
+                <h3 class="font-semibold text-lg ">Opciones de Atributos</h3>
+                <p class="button-close text-lg cursor-pointer " id="closeModalAddAttribute">✕</p>
+            </div>
+
+            <div class="body">
+                
+                <h3 class="font-semibold text-md mb-2">Atributo 1</h3>
+
+                <div class="border rounded px-4 py-3 mb-5">
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold mb-2 text-gray-400">Nombre</p>
+                        <input type="text" class="border w-full py-1.5 px-2.5 rounded text-sm" placeholder="Ej: Talla">
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold mb-2 text-gray-400">Opciones</p>
+                        <div class="border rounded flex w-full py-1.5 px-2">
+                            <div class="talla border rounded flex text-sm flex items-center py-0.5 px-1.5 mr-1">
+                                XS
+                                <span class="text-xs text-gray-300 ml-1 cursor-pointer">✕</span>
+                            </div>
+                            <div class="talla border rounded flex text-sm flex items-center py-0.5 px-1.5 mr-1">
+                                S
+                                <span class="text-xs text-gray-300 ml-1 cursor-pointer">✕</span>
+                            </div>
+                            <div class="talla border rounded flex text-sm flex items-center py-0.5 px-1.5 mr-1">
+                                M
+                                <span class="text-xs text-gray-300 ml-1 cursor-pointer">✕</span>
+                            </div>
+                            <div class="talla border rounded flex text-sm flex items-center py-0.5 px-1.5 mr-1">
+                                L
+                                <span class="text-xs text-gray-300 ml-1 cursor-pointer">✕</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-1">
+                        <p class="text-sm font-semibold mb-2 text-gray-400">Tipo de Selector</p>
+                        <select name="" id="" class="box-border text-sm border w-full py-1.5 px-2.5 rounded">
+                            <option value="">
+                                Checkbox
+                            </option>
+                            <option value="">
+                                Color
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                
+                <h3 class="font-semibold text-md mb-2">Atributo 2</h3>
+
+                <div class="border rounded px-4 py-3 mb-3">
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold mb-2 text-gray-400">Nombre</p>
+                        <input type="text" class="border w-full py-1.5 px-2.5 rounded text-sm" placeholder="Ej: Color">
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold mb-2 text-gray-400">Opciones</p>
+                        <div class="border rounded flex w-full py-1.5 px-2">
+                            <div class="talla border rounded flex text-sm flex items-center py-0.5 px-1.5 mr-1">
+                                Rojo
+                                <span class="text-xs text-gray-300 ml-1 cursor-pointer">✕</span>
+                            </div>
+                            <div class="talla border rounded flex text-sm flex items-center py-0.5 px-1.5 mr-1">
+                                Verde
+                                <span class="text-xs text-gray-300 ml-1 cursor-pointer">✕</span>
+                            </div>
+                            <div class="talla border rounded flex text-sm flex items-center py-0.5 px-1.5 mr-1">
+                                Azul
+                                <span class="text-xs text-gray-300 ml-1 cursor-pointer">✕</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-1">
+                        <p class="text-sm font-semibold mb-2 text-gray-400">Tipo de Selector</p>
+                        <select name="" id="" class="box-border text-sm border w-full py-1.5 px-2.5 rounded">
+                            <option value="">
+                                Color
+                            </option>
+                            <option value="">
+                                Checkbox
+                            </option>
+                        </select>
+                    </div>
+                </div>
+
+                <a href="#" disabled class="btn small info block">Nuevo Atributo</a>
+
+                <div class="footer fixed bottom-0 w-1/6 pb-5 bg-white">
+                    <a href="#" class="btn sucess small block mb-1">
+                        Guardar
+                    </a>
+                </div>
+
+            </div>
 
         </div>
 

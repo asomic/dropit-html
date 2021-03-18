@@ -152,11 +152,11 @@
                            </div>
                        </div>
    
-                       <div class="aviso flex justify-between items-center bg-gray-100 rounded py-2.5 px-5 mb-4">
+                       <div class="aviso flex justify-between items-center bg-gray-100 rounded py-2.5 px-5 mb-4" id="alertDialog">
                            <p class="text-sm">
-                               Se mostrarán solo los productos que están en <span class="font-semibold">Mi Catálogo</span>
+                               Se mostrarán solo los productos que están en <span class="font-semibold"> <a href="/public/minoristas/catalogo/index.html">Mi Catálogo</a> </span>
                            </p>
-                           <p class="cursor-pointer">✕</p>
+                           <p class="cursor-pointer" id="closeAlertCatalog">✕</p>
                        </div>
    
                        <div class="section">
@@ -282,7 +282,8 @@
                        Productos Agregados
                    </h3>
    
-                   <div class="box-cart flex justify-center flex-col flex-wrap text-center m-auto border rounded py-12 px-0">
+                   <!-- Cuando no hay productos -->
+                   <!-- <div class="box-cart flex justify-center flex-col flex-wrap text-center m-auto border rounded py-12 px-0">
    
                        <img src="../../assets/img/icons/bag.svg" alt="Carrito de Orden" class="mb-4 w-10 m-auto">
                        
@@ -290,11 +291,76 @@
                            Aquí aparecerán los productos que agregues a la orden
                        </p>
    
+                   </div> -->
+
+                   <div class="products">
+                       <div class="item flex flex-wrap xl:flex-no-wrap bg-gray-100 border rounded py-3 px-3 mb-2">
+                           <div class="img-wrapper hidden xl:block w-2/6 pr-2 max-h-14 2xl:max-h-16 3xl:max-h-20 h-32">
+                                <div class="img bg-gray-300 w-full h-full rounded"></div>    
+                            </div>
+                           <div class="data w-full xl:w-4/6 pl-2 flex flex-wrap items-center">
+                               <div class="header flex justify-between mb-1.5 w-full">
+                                   <h4 class="font-semibold text-sm w-5/6 leading-4">Nombre del Producto</h4>
+                                   <button class="bg-gray-200 text-gray-600 m-auto w-5 h-5 text-xs rounded border border-gray-400">✕</button>
+                               </div>
+                               <div class="body">
+                                   <p class="text-gray-500 text-xs">15 Un — M, Rojo</p>
+                                   <p class="text-green-dark font-semibold text-sm">
+                                        $<span>12.990</span>
+                                   </p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="item flex flex-wrap xl:flex-no-wrap bg-gray-100 border rounded py-3 px-3 mb-2">
+                           <div class="img-wrapper hidden xl:block w-2/6 pr-2 max-h-14 2xl:max-h-16 3xl:max-h-20 h-32">
+                                <div class="img bg-gray-300 w-full h-full rounded"></div>    
+                            </div>
+                           <div class="data w-full xl:w-4/6 pl-2 flex flex-wrap items-center">
+                               <div class="header flex justify-between mb-1.5 w-full">
+                                   <h4 class="font-semibold text-sm w-5/6 leading-4">Nombre del Producto</h4>
+                                   <button class="bg-gray-200 text-gray-600 m-auto w-5 h-5 text-xs rounded border border-gray-400">✕</button>
+                               </div>
+                               <div class="body">
+                                   <p class="text-gray-500 text-xs">10 Un — M, Verde</p>
+                                   <p class="text-green-dark font-semibold text-sm">
+                                        $<span>14.990</span>
+                                   </p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="item flex flex-wrap xl:flex-no-wrap bg-gray-100 border rounded py-3 px-3 mb-2">
+                           <div class="img-wrapper hidden xl:block w-2/6 pr-2 max-h-14 2xl:max-h-16 3xl:max-h-20 h-32">
+                                <div class="img bg-gray-300 w-full h-full rounded"></div>    
+                            </div>
+                           <div class="data w-full xl:w-4/6 pl-2 flex flex-wrap items-center">
+                               <div class="header flex justify-between mb-1.5 w-full">
+                                   <h4 class="font-semibold text-sm w-5/6 leading-4">Nombre del Producto</h4>
+                                   <button class="bg-gray-200 text-gray-600 m-auto w-5 h-5 text-xs rounded border border-gray-400">✕</button>
+                               </div>
+                               <div class="body">
+                                   <p class="text-gray-500 text-xs">10 Un — M, Verde</p>
+                                   <p class="text-green-dark font-semibold text-sm">
+                                        $<span>14.990</span>
+                                   </p>
+                               </div>
+                           </div>
+                       </div>
+
+                       <div class="totals flex justify-between text-sm mt-4">
+                           <p class="font-semibold">Total</p>
+                           <p>$<span>27.980</span></p>
+                       </div>
                    </div>
+
+                   <div class="fixed bottom-0 w-1/6 pr-1 pb-5 bg-white">
+                        <a href="#" class="btn sucess small block mb-1" id="processProducts">
+                            Procesar Productos
+                        </a>
+                    </div>
    
                </div>
 
-               <!-- Modal Ficha del Producto -->
+               <!-- Modal Ficha del Producto #modalOrderProductDetail -->
                <div class="modal top-0 fixed overflow-y-auto right-0 bg-white w-1/5 h-screen pt-9 px-7 pb-28 invisible" id="modalOrderProductDetail">
 
                     <div class="img block w-full h-48 bg-gray-600 mb-6"></div>
@@ -352,10 +418,10 @@
                     </div>
 
                     <div class="fixed bottom-0 w-1/6 pr-1 pb-5 bg-white">
-                        <a href="#" class="btn sucess small block mb-1">
+                        <a href="#" class="btn sucess small block mb-1" id="addProductToOrder">
                             Agregar a la Orden
                         </a>
-                        <a href="#" class="btn error small block">
+                        <a href="#" class="btn error small block" id="closeModalOrderProductDetail">
                             Cerrar
                         </a>
                     </div>
@@ -363,7 +429,7 @@
                 </div>
 
                 <!-- Modal Asignar Cliente -->
-               <!-- <div class="modal top-0 fixed overflow-y-auto right-0 bg-white w-1/5 h-screen pt-9 px-7 pb-28" id="modalOrderAsignClient">
+                <div class="modal top-0 fixed overflow-y-auto right-0 bg-white w-1/5 h-screen pt-9 px-7 pb-28 invisible" id="modalOrderAsignClient">
 
                     <h3 class="font-semibold text-lg mb-4">Asignar Cliente</h3>
 
@@ -380,7 +446,7 @@
                         </form>
                     </div>
 
-                    <a href="#" class="btn small block mb-2">
+                    <a href="#" class="btn small block mb-2" id="openAddNewClient">
                         Nuevo Cliente
                     </a>
                     
@@ -409,18 +475,85 @@
                     </div>
 
                     <div class="fixed bottom-0 w-1/6 pr-1 pb-5 bg-white flex">
-                        <a href="#" class="btn small mb-1 mr-1">
+                        <a href="#" class="btn small mb-1 mr-1" id="backToCart">
                             ◀
                         </a>
-                        <a href="#" class="btn sucess small mb-1 flex-1">
+                        <a href="#" class="btn sucess small mb-1 flex-1" id="goToResume">
                             Siguiente
                         </a>
                     </div>
 
-                </div> -->
+                </div>
+
+                <!-- Modal Asignar Cliente -->
+                <div class="modal top-0 fixed overflow-y-auto right-0 bg-white w-1/5 h-screen pt-9 px-7 pb-28 invisible" id="addNewClientModal">
+
+                    <h3 class="font-semibold text-lg mb-4">Datos del Cliente</h3>
+                    
+                    <div class="body">
+
+                        <div class="mb-4">
+                            <p class="text-sm font-semibold mb-2 text-gray-400">Nombre</p>
+                            <input type="text" class="border w-full py-1.5 px-2.5 rounded text-sm" placeholder="Ej: John Doe">
+                        </div>
+
+                        <div class="mb-4">
+                            <p class="text-sm font-semibold mb-2 text-gray-400">Dirección</p>
+                            <input type="text" class="border w-full py-1.5 px-2.5 rounded text-sm" placeholder="Ej: La Plaza #333">
+                        </div>
+
+                        <div class="mb-4">
+                            <p class="text-sm font-semibold mb-2 text-gray-400">Ciudad</p>
+                            <input type="text" class="border w-full py-1.5 px-2.5 rounded text-sm" placeholder="Ej: Curicó">
+                        </div>
+
+                        <div class="mb-4">
+                            <p class="text-sm font-semibold mb-2 text-gray-400">Región</p>
+                            <select name="" id="" class="box-border text-sm border w-full py-1.5 px-2.5 rounded">
+                                <option value="">Arica y Parinacota</option>
+                                <option value="">Tarapacá</option>
+                                <option value="">Antofagasta</option>
+                                <option value="">Atacama</option>
+                                <option value="">Coquimbo</option>
+                                <option value="">Valparaíso</option>
+                                <option value="">Metropolitana de Santiago</option>
+                                <option value="">Libertador General Bernardo O’Higgins</option>
+                                <option value="">Maule</option>
+                                <option value="">Ñuble</option>
+                                <option value="">Biobío</option>
+                                <option value="">La Araucanía</option>
+                                <option value="">Los Ríos</option>
+                                <option value="">Los Lagos</option>
+                                <option value="">Aysén del General Carlos Ibáñez del Campo</option>
+                                <option value="">Magallanes y la Antártica Chilena</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-4">
+                            <p class="text-sm font-semibold mb-2 text-gray-400">Teléfono</p>
+                            <input type="text" class="border w-full py-1.5 px-2.5 rounded text-sm" placeholder="Ej: 923451346">
+                        </div>
+
+                        <div class="mb-4">
+                            <p class="text-sm font-semibold mb-2 text-gray-400">Correo</p>
+                            <input type="text" class="border w-full py-1.5 px-2.5 rounded text-sm" placeholder="Ej: johndoe@gmail.com">
+                        </div>
+
+                    </div>
+
+                    <div class="fixed bottom-0 w-1/6 pr-1 pb-5 bg-white flex">
+                        <a href="#" class="btn small mb-1 mr-1 closeNewClientModal">
+                            ◀
+                        </a>
+                        <a href="#" class="btn sucess small mb-1 flex-1 closeNewClientModal">
+                            Agregar Cliente
+                        </a>
+                    </div>
+
+                </div>
 
                 <!-- Modal Datos del Cliente -->
-               <!-- <div class="modal top-0 fixed overflow-y-auto right-0 bg-white w-1/5 h-screen pt-9 px-7 pb-28" id="modalOrderDataClient">
+                <div class="modal top-0 fixed overflow-y-auto right-0 bg-white w-1/5 h-screen pt-9 px-7 pb-28 invisible" id="modalOrderDataClient">
 
                     <h3 class="font-semibold text-lg mb-4">Datos del Cliente</h3>
                     
@@ -480,10 +613,10 @@
                         </a>
                     </div>
 
-                </div> -->
+                </div>
 
                 <!-- Modal Resumen -->
-               <!-- <div class="modal top-0 fixed overflow-y-auto right-0 bg-white w-1/5 h-screen pt-9 px-7 pb-28" id="modalOrderResume">
+                <div class="modal top-0 fixed overflow-y-auto right-0 bg-white w-1/5 h-screen pt-9 px-7 pb-28 invisible" id="modalOrderResume">
 
                     <h3 class="font-semibold text-lg mb-5">Resumen de Orden</h3>
                     
@@ -532,7 +665,7 @@
                     </div>
 
                     <div class="fixed bottom-0 w-1/6 pr-1 pb-5 bg-white flex">
-                        <a href="#" class="btn small mb-1 mr-1">
+                        <a href="#" class="btn small mb-1 mr-1" id="backToAssign">
                             ◀
                         </a>
                         <a href="#" class="btn sucess small mb-1 flex-1">
@@ -540,7 +673,7 @@
                         </a>
                     </div>
 
-                </div> -->
+                </div>
 
             </div>
 

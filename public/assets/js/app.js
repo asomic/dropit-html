@@ -14,6 +14,7 @@
     
         let body = document.querySelector('body');
 
+        // Buttons
         let detailProd = document.querySelectorAll('.openDetailProd');
         let buttonEditOrder = document.querySelector('#buttonEditOrder');
         let buttonOpenChat = document.querySelector('#buttonOpenChat');
@@ -22,6 +23,13 @@
         let buttonModalInfoOrder = document.querySelector('#buttonModalInfoOrder');
         let openModalEditAttribute = document.querySelectorAll('.openModalEditAttribute');
         let buttonAddNewCategory = document.querySelector('#buttonAddNewCategory');
+        let openModalAddAttribute = document.querySelector('#openModalAddAttribute');
+        let buttonAddCart = document.querySelectorAll('.buttonAddCart');
+        let addProductToOrder = document.querySelector('#addProductToOrder');
+        let processProducts = document.querySelector('#processProducts');
+        let goToResume = document.querySelector('#goToResume');
+        let backToAssign = document.querySelector('#backToAssign');
+        let openAddNewClient = document.querySelector('#openAddNewClient');
         
         let closeModalEditar = document.querySelector('#closeModalEditar');
         let closeModalChat = document.querySelector('#closeModalChat');
@@ -29,7 +37,13 @@
         let closeModalProductDetail = document.querySelector('#closeModalProductDetail');
         let closeModalInfoOrder = document.querySelector('#closeModalInfoOrder');
         let closeModalAddCategory = document.querySelector('#closeModalAddCategory');
+        let closeModalAddAttribute = document.querySelector('#closeModalAddAttribute');
+        let closeModalOrderProductDetail = document.querySelector('#closeModalOrderProductDetail');
+        let backToCart = document.querySelector('#backToCart');
+        let closeNewClientModal = document.querySelectorAll('.closeNewClientModal');
+        let closeAlertCatalog = document.querySelector('#closeAlertCatalog');
         
+        // Modals & Containers
         let pageModal = document.querySelector('#pageModal');
         let modalProductDetail = document.querySelector('#modalProductDetail');
         let modalEditar = document.querySelector('#modalEditar');
@@ -38,14 +52,14 @@
         let modalClient = document.querySelector('#modalClient');
         let modalInfoOrder = document.querySelector('#modalInfoOrder');
         let modalEditAttribute = document.querySelector('#modalEditAttribute');
+        let modalAddAttribute = document.querySelector('#modalAddAttribute');
         let modalAddCategory = document.querySelector('#modalAddCategory');
-        
+        let alertDialog = document.querySelector('#alertDialog');
         // Order Modals
-        let buttonAddCart = document.querySelectorAll('.buttonAddCart');
-
         let sidebarCart = document.querySelector('#sidebarCart');
         let modalOrderProductDetail = document.querySelector('#modalOrderProductDetail');
         let modalOrderAsignClient = document.querySelector('#modalOrderAsignClient');
+        let addNewClientModal = document.querySelector('#addNewClientModal');
         let modalOrderDataClient = document.querySelector('#modalOrderDataClient');
         let modalOrderResume = document.querySelector('#modalOrderResume');
         
@@ -218,12 +232,83 @@
 
         }
 
-        // Order Modals actions
-        // if (modalOrderProductDetail) {
-        //     for (let step = 0; step < buttonAddCart.length; step++) {
+        if (modalAddAttribute) {
 
-        //     }
-        // }
+            openModalAddAttribute.onclick = () => {
+                body.style.overflow = 'hidden';
+                pageModal.classList.remove('invisible');
+                pageModal.classList.add('visible');
+                modalAddAttribute.classList.remove('invisible');
+                modalAddAttribute.classList.add('visible');
+            }
+
+            closeModalAddAttribute.onclick = () => {
+                body.style.overflow = 'auto';
+                pageModal.classList.remove('visible');
+                pageModal.classList.add('invisible');
+                modalAddAttribute.classList.remove('visible');
+                modalAddAttribute.classList.add('invisible');
+            }
+
+        }
+
+        // Order Modals actions
+        if (modalOrderProductDetail) {
+            for (let step = 0; step < buttonAddCart.length; step++) {
+
+                buttonAddCart[step].onclick = () => {
+                    modalOrderProductDetail.classList.remove('invisible');
+                }
+
+            }
+
+            closeModalOrderProductDetail.onclick = () => {
+                modalOrderProductDetail.classList.add('invisible');
+            }
+
+            addProductToOrder.onclick = () => {
+                modalOrderProductDetail.classList.add('invisible');
+            }
+        }
+
+        if (modalOrderAsignClient) {
+            processProducts.onclick = () => {
+                modalOrderAsignClient.classList.remove('invisible');
+            }
+            
+            backToCart.onclick = () => {
+                modalOrderAsignClient.classList.add('invisible');
+            }
+
+            goToResume.onclick = () => {
+                // modalOrderDataClient.classList.remove('invisible');
+                modalOrderResume.classList.remove('invisible');
+            }
+
+            openAddNewClient.onclick = () => {
+                addNewClientModal.classList.remove('invisible');
+            }
+        }
+
+        if (modalOrderResume) {
+            backToAssign.onclick = () => {
+                modalOrderResume.classList.add('invisible');
+            }
+        }
+
+        if (addNewClientModal) {
+            for (let step = 0; step < closeNewClientModal.length; step++) {
+                closeNewClientModal[step].onclick = () => {
+                    addNewClientModal.classList.add('invisible');
+                }
+            }
+        }
+
+        if (alertDialog) {
+            closeAlertCatalog.onclick = () => {
+                alertDialog.classList.add('hidden');
+            }
+        }
 
     };
 
